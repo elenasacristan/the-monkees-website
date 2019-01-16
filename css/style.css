@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+
+
+/*******************************  GENERAL *********************************************/
+
+html,
+body {
+    height: 100%;
+    background-color: white;
+    padding: 0px;
+    border: 0px;
+
+}
+
+.center-upper {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/******************************* index.html *********************************************/
+
+/******************************* small screens header ***********************************/
+
+header {
+    width: 100%;
+  /*  height: 100%;  */
+
+}
+
+
+.hight20-0 {
+    padding: 10px;
+    border: 0px;
+    height: 20%;
+    background-color: #de8e15;
+    position: relative;
+    border-bottom: 2px solid #0b1752;
+}
+
+.hight20-0 img {
+    position: absolute;
+    /* places absolute in relation to hight-20-0 because is hight-20-0 is position:relative and img is absolute*/
+    height: 100%;
+    display: block;
+    margin: auto;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* so it apperas on top of the carousel */
+}
+
+
+/******************************* Carousel *********************************************/
+
+.hight60-80 {
+    padding: 0px;
+    border: 0px;
+    height: 60%;
+    overflow: hidden;
+}
+
+section,
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+
+.carousel-inner {
+    height: 100%;
+}
+
+.slide {
+    margin: 0px;
+}
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    /*height: auto;*/
+    height: 100%;
+    object-fit: cover;
+    /*so the image doesn't lose the ratio*/
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+}
+
+
+/* These three overlay are in case I want to use a different overlay for each picture*/
+
+.overlay1 {
+    background-color: rgba(229, 211, 160, 0.3);
+}
+
+.overlay2 {
+    background-color: rgba(229, 211, 160, 0.3);
+}
+
+.overlay3 {
+    background-color: rgba(229, 211, 160, 0.3);
+}
+
+
+.carousel-indicators {
+    margin-bottom: 20px;
+
+}
+
+.carousel-indicators li:active {
+    background-color: #de8e15;
+    width: 15px;
+    height: 15px;
+
+}
+
+
+.carousel-indicators .active {
+
+    background-color: #de8e15;
+    width: 15px;
+    height: 15px;
+
+}
+
+
+.carousel-indicators li {
+    border: 3px solid #0b1752;
+    width: 15px;
+    height: 15px;
+}
+
+
+.glyphicon.glyphicon-chevron-right {
+    font-size: 50px;
+    color: #de8e15;
+}
+
+.glyphicon.glyphicon-chevron-left {
+    font-size: 50px;
+    color: #de8e15;
+}
+
+
+
+/******************************* Footer index.html ***********************************/
+
+.hight20 {
+    padding: 0px;
+    border: 0px;
+    height: 20%;
+    background-color: #0b1752;
+    border-top: 2px solid #de8e15;
+}
+
+
+.circle {
+    margin-left: 10%;
+    width: 220px;
+    height: 220px;
+    border-radius: 200px;
+    background-color: #de8e15;
+    position: absolute;
+    bottom: 10%;
+
+}
+
+
+footer img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    bottom: 15px;
+    left: 15px;
+}
+
+
+footer p {
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+footer p a {
+    font-family: 'Bangers', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 4px;
+
+}
+
+footer p a:hover,
+footer p a:focus {
+    color: #de8e15;
+    text-decoration: none;
+}
+
+/******************************* media queries for index.html ***********************************/
+
+@media (min-width:768px) {
+
+    footer p a {
+        font-size: 40px;
+    }
+
+    /***** for desktop we want to display the carousel using the 80% 
+     of the hight instead of the 60% as we do for small screens*/
+    .hight60-80 {
+        height: 80%;
+    }
+
+
+    footer p {
+        padding-top: 50px;
+    }
+}
+
+
+
+
