@@ -10,13 +10,18 @@
 
     <!--link to bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+
     <!--link to hover effects-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+
     <!--link to font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" />
-    <title>The Monkees website</title>
+
     <!-- My style sheet to update the original template-->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <title>The Monkees website</title>
+
 </head>
 
 
@@ -53,10 +58,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item nav-item-menu"><a href="#"><i class="fa fa-music hidden-xs"></i><span class="page">The Band</span> <span class="sr-only">(current)</span></a></li>
-                                <li class="nav-item nav-item-menu"><a href="#"><i class="fa fa-newspaper-o hidden-xs"></i><span class="page">News</span></a></li>
-                                <li class="nav-item nav-item-menu"><a href="#"><i class="fa fa-music hidden-xs"></i><span class="page">Listen</span></a></li>
-                                <li class="nav-item nav-item-menu active"><a href="#"><i class="fa fa-comments hidden-xs"></i><span class="page">Contact</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="theband.html"><i class="fa fa-music hidden-xs"></i><span class="page">The Band</span> <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="news.html"><i class="fa fa-newspaper-o hidden-xs"></i><span class="page">News</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="listen.html"><i class="fa fa-music hidden-xs"></i><span class="page">Listen</span></a></li>
+                                <li class="nav-item nav-item-menu active"><a href="contact.html"><i class="fa fa-comments hidden-xs"></i><span class="page">Contact</span></a></li>
                                 <li class="nav-item subscribe"><a href="#" class="btn btn-success" type="submit">Subscribe</a></li>
 
                             </ul>
@@ -75,9 +80,6 @@
 
     </header>
 
-
-
-
     <section class="container-fluid">
         <div class="row bg-contact">
             <div class="col-12-xs"></div>
@@ -85,40 +87,46 @@
     </section>
 
     <footer class="container-fluid">
+
         <div class="row bg-all-footer">
-            <div class="col-xs-6 bg-contactus">
+
+            <div class="col-xs-6 col-md-3 bg-contactus">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h5 class="center-upper">Contact Us</h5>
+                        <h5 class="uppercase">Contact Us</h5>
                     </div>
                 </div>
-                <div class="row">
+
+                <div class="row contact-email">
                     <div class="col-xs-12">
-                        <dl class="c-details">
-                            <dt class="c-detail-title">email:</dt>
-                            <dd class="c-detail">email@email.com</dd>
-                            <dt class="c-detail-title">telefono:</dt>
-                            <dd class="c-detail">111-111-111</dd>
+                        <dl class="dl-horizontal">
+                            <dt>email:</dt>
+                            <dd>email@email.com</dd>
+                            <dt>telephone:</dt>
+                            <dd>000-000-000</dd>
                         </dl>
-
-
                     </div>
                 </div>
-
-
-
             </div>
 
-
-            <div class="col-xs-6 bg-social">
-                <h5 class="center-upper">Follow us!</h5>
-                <ul class="list-inline social-media-area">
-                    <li class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li class="social-item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                    <li class="social-item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                </ul>
+            <div class="col-xs-6 col-md-offset-6 col-md-3 bg-social">
+                <div class="wrapper-footer-social">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5 class="uppercase text-center">Follow us!</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="list-inline social-media-area">
+                                <li class="social-item"><span class="bg-social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></span></li>
+                                <li class="social-item"><span class="bg-social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></li>
+                                <li class="social-item"><span class="bg-social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
 
     </footer>

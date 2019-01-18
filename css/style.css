@@ -13,9 +13,8 @@ body {
 
 }
 
-.center-upper {
+.uppercase {
     text-transform: uppercase;
-    text-align: center;
 }
 
 
@@ -25,8 +24,7 @@ body {
 
 header {
     width: 100%;
-  /*  height: 100%;  */
-
+    /*  height: 100%;  */
 }
 
 
@@ -305,7 +303,8 @@ footer p a:focus {
 /******************************* hamburger button ************************************/
 
 .navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
     border-color: transparent;
     background-color: transparent;
     margin-top: 25px;
@@ -324,9 +323,6 @@ footer p a:focus {
 nav ul li .page {
     white-space: nowrap;
     /*** no wrap to the next line **/
-    
-
-
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -392,7 +388,6 @@ nav ul li {
 
 /******************************* media queries for bigger screens ************************************/
 
-
 @media (min-width: 768px) {
     .navbar-nav {
         float: none;
@@ -404,7 +399,7 @@ nav ul li {
     .navbar-collapse.collapse {
         height: 100px;
         margin-top: 0px;
-        
+
     }
 
     .navbar-nav>.nav-item-menu>a {
@@ -453,8 +448,8 @@ nav ul li {
         width: 100%;
         border-radius: 20px;
     }
-    
-    
+
+
 
     .navbar-default .navbar-nav>.subscribe>a:focus,
     .navbar-default .navbar-nav>.subscribe>a:hover {
@@ -470,7 +465,7 @@ nav ul li {
 
     nav ul li .page {
         display: block;
-       
+
 
     }
 
@@ -508,31 +503,102 @@ nav ul li {
 
 /****************FOOTER*******************/
 
-
-
-.bg-all-footer{
+.bg-all-footer {
     background-color: #86a875;
     height: 100%;
+    color: #fdfdfd;
+    border-top: 2px solid #0b1752;
+}
+
+footer h5 {
+    font-family: 'Bangers', sans-serif;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    font-size: 18px
+}
+
+.bg-contactus {
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dl-horizontal {
+    float: left;
+}
+
+.dl-horizontal dt {
+    width: 80px;
+    text-align: left;
+
+}
+
+.dl-horizontal dd {
+    width: 120px;
 }
 
 
+@media (min-width: 768px) {
+    .dl-horizontal dd {
+        margin-left: 100px;
+    }
+}
 
 
 /*************Social media***************/
 
+.wrapper-footer-social {
+    float: right;
+}
+
+.bg-social {
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.social-media-area {
+    min-width: 145px;
+}
+
+
+
+
+.bg-social-icon {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    background-color: #516b57;
+    margin-bottom: 10px;
+}
+
+
+.bg-social-icon:hover {
+    background-color: #3b4c3f;
+}
+
+.bg-social-icon i {
+
+    font-size: 25px;
+    position: absolute;
+    line-height: 35px;
+    /*this way it is center vertically*/
+    left: 6px;
+}
+
+.bg-social-icon .fa-facebook {
+
+    left: 10px;
+}
 
 
 /****************SECTION contact.html***********/
 
-.bg-contact{
+.bg-contact {
     background-color: #efefef;
     height: 100%;
 
 }
-
-
-.c-details{
-   
-}
-
-
