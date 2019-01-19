@@ -236,14 +236,14 @@ footer p a:focus {
 .wrapper-header {
     background-color: #de8e15;
     border-bottom: 2px solid #0b1752;
-    height: 100px;
+    height: 120px;
 }
 
 
 /******************************* header logo ************************************/
 
 .logo {
-    height: 100px;
+    height: 120px;
     position: relative;
 }
 
@@ -278,8 +278,8 @@ footer p a:focus {
     .logo img {
 
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 210px;
+        height: 210px;
         object-fit: contain;
         bottom: -100px;
         z-index: 1;
@@ -330,7 +330,6 @@ nav ul li .page {
     font-size: 18px;
     font-family: 'Bangers', sans-serif;
     letter-spacing: 3px;
-    font-size: 18px;
 
 
 }
@@ -344,6 +343,11 @@ nav ul li .page {
     color: #0b1752;
     background-color: transparent;
 }
+
+
+
+
+
 
 
 nav ul li {
@@ -410,8 +414,12 @@ nav ul li {
         padding-top: 10px;
     }
 
+    .navbar-default .navbar-nav>li>a {
 
-    
+        font-size: 20px;
+    }
+
+
     .nav-item {
         width: 20%;
         height: 100%;
@@ -448,9 +456,9 @@ nav ul li {
     .collapse ul .subscribe .btn {
         padding-top: 10px;
         height: 50px;
-        width: 140px;
+        width: 160px;
         border-radius: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
 
@@ -570,6 +578,11 @@ footer h5 {
     }
 }
 
+@media (min-width: 768px) {
+    footer h5 {
+        font-size: 20px;
+}
+}
 
 
 /*************Social media***************/
@@ -614,7 +627,10 @@ footer h5 {
     line-height: 35px;
     /*this way it is center vertically*/
     left: 7px;
+    color: #fff;
 }
+
+
 
 .bg-social-icon .fa-facebook {
 
@@ -625,7 +641,7 @@ footer h5 {
 /********************   MODAL   ******************/
 
 .modal-content {
-    background-color: #efefef;
+    background-color: #eeeeee;
 }
 
 .modal-title {
