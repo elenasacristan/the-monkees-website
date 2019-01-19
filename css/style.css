@@ -410,6 +410,8 @@ nav ul li {
         padding-top: 10px;
     }
 
+
+    
     .nav-item {
         width: 20%;
         height: 100%;
@@ -444,9 +446,11 @@ nav ul li {
 
 
     .collapse ul .subscribe .btn {
-        height: 45px;
-        width: 100%;
+        padding-top: 10px;
+        height: 50px;
+        width: 140px;
         border-radius: 20px;
+        margin-bottom: 20px;
     }
 
 
@@ -501,6 +505,27 @@ nav ul li {
 
 
 
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+    color: #fff;
+    background-color: #398439;
+    border: none;
+}
+
+
+
+
+
+
+
+
 /****************FOOTER*******************/
 
 .bg-all-footer {
@@ -523,26 +548,28 @@ footer h5 {
     padding-bottom: 8px;
 }
 
-.dl-horizontal {
-    float: left;
-}
 
 .dl-horizontal dt {
-    width: 80px;
     text-align: left;
 
 }
 
-.dl-horizontal dd {
-    width: 120px;
-}
+@media (min-width: 540px) {
+    .dl-horizontal dt {
+        float: left;
+        overflow: hidden;
+        clear: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 80px;
+    }
 
 
-@media (min-width: 768px) {
     .dl-horizontal dd {
-        margin-left: 100px;
+        margin-left: 90px;
     }
 }
+
 
 
 /*************Social media***************/
@@ -586,7 +613,7 @@ footer h5 {
     position: absolute;
     line-height: 35px;
     /*this way it is center vertically*/
-    left: 6px;
+    left: 7px;
 }
 
 .bg-social-icon .fa-facebook {
@@ -595,10 +622,72 @@ footer h5 {
 }
 
 
+/********************   MODAL   ******************/
+
+.modal-content {
+    background-color: #efefef;
+}
+
+.modal-title {
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+
+}
+
+.modal-footer .btn-save {
+    background-color: #de8e15;
+    color: #fff;
+
+}
+
+
+.wrapper-check {
+    padding-top: 10px;
+}
+
+
+.form-control {
+    margin: 0 auto;
+    border: 0px;
+    height: 45px;
+    width: 80%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.wrapper-check {
+    width: 80%;
+}
+
+
+.modal-header,
+.modal-footer {
+    border: 0px;
+    text-align: center;
+
+}
+
+.modal-footer {
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.modal-footer .btn {
+    font-size: 18px;
+}
+
+
 /****************SECTION contact.html***********/
 
 .bg-contact {
-    background-color: #efefef;
+    background-color: #fefefe;
     height: 100%;
 
 }

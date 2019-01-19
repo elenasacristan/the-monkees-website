@@ -62,8 +62,7 @@
                                 <li class="nav-item nav-item-menu"><a href="news.html"><i class="fa fa-newspaper-o hidden-xs"></i><span class="page">News</span></a></li>
                                 <li class="nav-item nav-item-menu"><a href="listen.html"><i class="fa fa-music hidden-xs"></i><span class="page">Listen</span></a></li>
                                 <li class="nav-item nav-item-menu active"><a href="contact.html"><i class="fa fa-comments hidden-xs"></i><span class="page">Contact</span></a></li>
-                                <li class="nav-item subscribe"><a href="#" class="btn btn-success" type="submit">Subscribe</a></li>
-
+                                <li class="nav-item subscribe"><a href="#" class="btn btn-success" type="submit" data-toggle="modal" data-target="#myModal">Subscribe</a></li>
                             </ul>
 
 
@@ -90,7 +89,7 @@
 
         <div class="row bg-all-footer">
 
-            <div class="col-xs-6 col-md-3 bg-contactus">
+            <div class="col-xs-8 col-md-3 bg-contactus">
                 <div class="row">
                     <div class="col-xs-12">
                         <h5 class="uppercase">Contact Us</h5>
@@ -109,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-md-offset-6 col-md-3 bg-social">
+            <div class="col-xs-4 col-md-offset-6 col-md-3 bg-social">
                 <div class="wrapper-footer-social">
                     <div class="row">
                         <div class="col-sm-12">
@@ -133,18 +132,83 @@
 
 
 
+
+
+
+    <!--MODAL-->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">Subscribe to our monthly newsletter!</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="InputName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="InputEmail1" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="InputPassword1" placeholder="type a password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="InputPassword1" placeholder="type your password again">
+                        </div>
+                        <div class="wrapper-check">
+                            <div class="checkbox newsletter">
+                                <label>
+                                 <input type="checkbox"  checked> Subscribe me to the monthly newsletter.
+                            </label>
+                            </div>
+                            <div class="checkbox offers">
+                                <label>
+                                 <input type="checkbox" > Send emails with offers about concerts.
+                            </label>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-save">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    ================================================== 
+    
+    JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--Bootstrap (JS file)-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+    <!-- Placed at the end of the document so the pages load faster
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-    </script>
+    <script>        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')    </script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    
+    /*
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! 
     <script src="js/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>*/ -->
 
 
 </body>
