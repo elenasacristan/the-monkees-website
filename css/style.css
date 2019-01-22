@@ -212,6 +212,11 @@ footer p a {
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 4px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+
 
 }
 
@@ -219,6 +224,7 @@ footer p a:hover,
 footer p a:focus {
     color: #de8e15;
     text-decoration: none;
+
 }
 
 /******************************* media queries for index.html ***********************************/
@@ -345,6 +351,10 @@ nav ul li .page {
     font-size: 18px;
     font-family: 'Bangers', sans-serif;
     letter-spacing: 3px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 
 
 }
@@ -373,6 +383,7 @@ nav ul li {
     padding-bottom: 10px;
     padding-top: 10px;
 
+
 }
 
 .btn-success {
@@ -380,6 +391,8 @@ nav ul li {
     background-color: #de8e15;
     border-color: transparent;
 }
+
+
 
 .nav>li>a:hover {
     color: #fff;
@@ -435,6 +448,7 @@ nav ul li {
     .navbar-default .navbar-nav>li>a {
 
         font-size: 20px;
+
     }
 
 
@@ -447,7 +461,10 @@ nav ul li {
 
     .nav>li>a {
         display: inline-block;
+
     }
+
+
 
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus,
@@ -456,14 +473,20 @@ nav ul li {
         color: #0b1752;
     }
 
+
+
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+
     .navbar-default .navbar-nav>li>a:focus,
     .navbar-default .navbar-nav>li>a:hover {
         color: #0b1752;
         background-color: transparent;
-    }
-
-    .navbar-default .navbar-nav>li>a {
-        color: #fff;
     }
 
     .navbar-nav>li>a {
@@ -508,6 +531,11 @@ nav ul li {
         color: #fff;
         background-color: #ff8a00;
         box-shadow: 1px 2px 4px 0px #0b1752;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+
     }
 
     .btn-success.active,
@@ -545,6 +573,11 @@ nav ul li {
     border: none;
 }
 
+
+.btn-success.focus,
+.btn-success:focus {
+    border-color: transparent;
+}
 
 
 
@@ -640,6 +673,10 @@ footer h5 {
     height: 35px;
     background-color: #516b57;
     margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 
@@ -824,16 +861,36 @@ footer h5 {
 }
 
 
+
+
+
 .member-info div div h3 {
     margin-bottom: 20px;
-    margin-top: 20px;
 }
 
+.member-info {
+    padding-bottom: 35px;
+}
+
+
+.members-img-text {
+    margin-bottom: 25px
+}
+
+
+.bandimage2 img {
+    width: 300px;
+}
 
 @media (min-width: 768px) {
 
     .wrapper-section {
-        margin: 60px 100px;
+        margin: 60px 25px 60px 40px;
+    }
+
+    .member-wrapper {
+        padding-right: 135px;
+
     }
 
 
@@ -845,21 +902,66 @@ footer h5 {
     .bandimage2 {
         float: left;
         margin: 0px 80px 50px 0px;
+
     }
 
 
+    .bandimage2 img {
+        width: 650px;
+    }
 
     .member-info {
-        padding: 0px 15px 15px 15px;
+        padding: 0px 25px 40px 25px;
     }
 
-    .textband {
-        margin-top: 0px;
-    }
-
-   
 
 
 }
 
 
+
+
+/************************* discography********************************/
+
+.disco-wrapper {
+    width: 100%;
+    padding-left: 60px;
+    border-left: 2px solid black;
+
+}
+
+.discography {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+
+
+}
+
+.timeline {
+    margin-left: 25px;
+}
+
+.discography-item {
+    padding-left: 15px;
+    padding-bottom: 50px;
+    font-size: 18px
+}
+
+
+
+
+
+.discography::after {
+    position: absolute;
+    top: 0px;
+    left: -105px;
+    content: attr(year);
+    display: block;
+    background-color: #0c1d47;
+    color: #fff;
+    border-radius: 25px;
+    padding: 2px 25px;
+    border: 1px solid #0c1d47;
+    font-size: 18px
+}
