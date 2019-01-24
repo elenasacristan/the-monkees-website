@@ -965,3 +965,109 @@ footer h5 {
     border: 1px solid #0c1d47;
     font-size: 18px
 }
+
+
+
+/******************************************* listen.html *********************************************/
+
+@media (min-width: 768px) {
+
+    .newmusic {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .classics {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+    }
+}
+
+
+.music-column {
+   
+    padding: 25px 50px;
+
+}
+
+.wrapper-player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+
+}
+
+
+
+
+.album {
+    position: relative;
+    top: 3em;
+    width: 10em;
+    height: 10em;
+    margin-bottom: 4%;
+}
+
+
+
+.player {
+    position: relative;
+    width: auto;
+    min-height: 20em;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 0.25em;
+    box-shadow: none;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+.audio-mp3 {
+    margin: 0 auto;
+}
+
+
+.title-song {
+    text-align: center;
+    margin-top: 25px;
+}
+.share-link{
+    text-align: center;
+}
+
+.share-link i{
+    margin: 15px;
+    font-size: 30px;
+}
+
+
+
+.buy-download{
+   text-align: center; 
+}
+
+.buy-download i{
+    margin-top: 10px;
+  font-size: 25px;  
+}
+
+.wrapper-song{
+    margin-bottom: 60px;
+}
+
+/**** add hover and transitions ****/
