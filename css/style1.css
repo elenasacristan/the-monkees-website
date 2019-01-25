@@ -251,11 +251,16 @@ h2 { font-size: 87.5%; }
     0 0 0.25em 0.125em rgba(0,0,0,0.15);
 }
 
+
+/*
 .ffing .cover::before,
 .ffing .cover::after {
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
+
+*/
+
 
 .cover img {
   position: absolute;
@@ -263,7 +268,7 @@ h2 { font-size: 87.5%; }
   left: 50%;
   width: 100%;
   height: 100%;
-  -webkit-transform-origin: 0 0;
+-webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: rotate(0) translate(-50%,-50%);
           transform: rotate(0) translate(-50%,-50%);
@@ -271,6 +276,8 @@ h2 { font-size: 87.5%; }
           animation: spin 4s linear infinite paused;
 }
 
+
+/*
 .paused .cover img {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
@@ -557,6 +564,8 @@ button {
 .repeat.active {
   color: #bde;
 }
+
+*/
 
 @-webkit-keyframes spin {
   100% { -webkit-transform: rotate(360deg) translate(-50%,-50%); transform: rotate(360deg) translate(-50%,-50%); }
