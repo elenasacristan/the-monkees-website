@@ -80,8 +80,155 @@
 
     </header>
 
-    <section class="container-fluid bg-section">
+    <section class="container-fluid bg-section bg-section-contact">
         <div class="wrapper-section">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6 contact-form-wrapper">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="page-subtitle text-center">Would you like us to play in your event?</h2>
+                        </div>
+                    </div>
+
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="email1" class="col-xs-2 control-label">Email:</label>
+                            <div class="col-xs-10">
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name1" class="col-xs-2 control-label">Name:</label>
+                            <div class="col-xs-10">
+                                <input type="text" name="name1" class="form-control" id="name1" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event" class="col-xs-2 control-label">Event:</label>
+                            <div class="col-xs-10">
+                                <select class="form-control" name="event" id="event" required>
+                                    <option>Weeding</option>
+                                    <option>Birthday</option>
+                                    <option>Corporate Event</option>
+                                    <option>Other (please specify in the comments box below)</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="form-group">
+                            <label for="date" class="col-sm-2 col-xs-2 control-label">Date:</label>
+                            <div class="col-sm-4 col-xs-10">
+                                <input class="form-control date" type="date" id="date" name="date">
+                            </div>
+                           
+                            
+                           <label for="time" class="col-sm-2 col-xs-2 control-label">Time:</label>
+                            <div class="col-sm-4  col-xs-10">
+                                <select class="form-control time" name="time" id="time" required>
+                                    <option>12:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                    <option>21:00</option>
+                                    <option>22:00</option>
+                                    <option>23:00</option>
+                                    
+                                </select>
+                            </div>
+                           
+                           
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="people" class="col-xs-6 control-label">Number of people at the event:</label>
+                            <div class="col-xs-6">
+                                <input type="number" class="form-control" id="people" name="people" min="25" max="1000000" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                           
+                            <div class="col-xs-12">
+                                <textarea class="form-control" rows="5" name="comments" id="comments" placeholder="Tell us more about the event. (optional)"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-5 col-sm-7">
+                                <input type="reset" class="btn btn-default" value="Cancel">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+
+                <div class="col-xs-12 col-md-6 opinions-wrapper">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="page-subtitle text-center">Why you should book us...</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="media">
+                                <div class="media-left hidden-xs">
+                                    <img class="media-object img-thumbnail" src="images/opinion1.jpg" alt="opinion1" width="120">
+                                </div>
+                                <div class="media-body">
+                                    <blockquote>
+                                        <p><i class="fa fa-quote-left"></i> The best present in our weeding day was to see the Monkees play live in our special day! <i class="fa fa-quote-right"></i></p>
+                                        <p>- Peter and Sarah</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-body">
+                                    <blockquote>
+                                        <p><i class="fa fa-quote-left"></i> I have never seen my dad as happy as he was on his 70's bithday when he received the visit from the Monkees. <i class="fa fa-quote-right"></i></p>
+                                        <p>- Nick</p>
+                                    </blockquote>
+                                </div>
+                                <div class="media-right hidden-xs">
+                                    <img class="media-object img-thumbnail" src="images/opinion2.jpg" alt="opinion2" width="120">
+                                </div>
+
+                            </div>
+                            
+                             <div class="media">
+                                <div class="media-left hidden-xs">
+                                    <img class="media-object img-thumbnail" src="images/opinion3.jpg" alt="opinion3" width="120">
+                                </div>
+                                <div class="media-body">
+                                    <blockquote>
+                                        <p><i class="fa fa-quote-left"></i>The Monkees played in our Christmas party and since then I can't stop playing their song over and over again :)<i class="fa fa-quote-right"></i></p>
+                                        <p>- Marketing company</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
 
 
         </div>
@@ -135,7 +282,7 @@
     </footer>
 
 
-   <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

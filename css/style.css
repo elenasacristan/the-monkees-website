@@ -13,8 +13,8 @@ body {
     margin: 0px;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    font-weight:400;
-    font-size:18px;
+    font-weight: 400;
+    font-size: 18px;
 
 
 }
@@ -117,6 +117,7 @@ header {
 
 
 /* These three overlay are in case I want to use a different overlay for each picture*/
+
 /*
 .overlay1 {
     background-color: rgba(229, 211, 160, 0.3);
@@ -131,6 +132,7 @@ header {
 }
 
 */
+
 .carousel-indicators {
     margin-bottom: 20px;
 
@@ -832,9 +834,9 @@ footer h5 {
     margin-bottom: 35px;
     margin-left: 16px;
     font-size: 32px;
-    color:#555555;
+    color: #555555;
 
-    
+
 }
 
 
@@ -1001,7 +1003,7 @@ footer h5 {
 
 
 .music-column {
-   
+
     padding: 25px 20px;
 
 }
@@ -1024,7 +1026,7 @@ footer h5 {
     width: 150px;
     height: 150px;
     margin-bottom: 4%;
-    padding:20px;
+    padding: 20px;
 }
 
 
@@ -1051,73 +1053,117 @@ audio {
     margin-top: 25px;
 }
 
-.buy-download-share{
+.buy-download-share {
     text-align: center;
 }
 
-.buy-download-share a i{
-    padding-left:15px;
+.buy-download-share a i {
+    padding-left: 15px;
     font-size: 25px;
-    color:#1c5821;
-     transition: all .3s ease-in-out;
+    color: #1c5821;
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-    
-}
-
-
-.buy-download-share a i:hover{
-   
-    color:#ff7800;
-    
-}
-
-.lyrics{
-    padding-top:15px;
-}
-
-.fa-download{
-    padding-top:25px;
-}
-
-.share-buy{
-    padding:25px;
-}
-
-.share-buy a i{
-        font-size: 35px;
-        letter-spacing:30px;
 
 }
 
-.wrapper-song{
+
+.buy-download-share a i:hover {
+
+    color: #ff7800;
+
+}
+
+.lyrics {
+    padding-top: 15px;
+}
+
+.fa-download {
+    padding-top: 25px;
+}
+
+.share-buy {
+    padding: 25px;
+}
+
+.share-buy a i {
+    font-size: 35px;
+    letter-spacing: 30px;
+
+}
+
+.wrapper-song {
     margin-bottom: 60px;
 }
 
-.lyrics p{
+.lyrics p {
     vertical-align: middle;
 }
 
 
 .cover div {
- 
-  width: 80px;
-  height: 80px;
 
-    
+    width: 80px;
+    height: 80px;
+
+
 }
 
 .cover img:hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
--webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  -webkit-transform: rotate(0) translate(-50%,-50%);
-          transform: rotate(0) translate(-50%,-50%);
-  -webkit-animation: spin 4s linear infinite paused;
-          animation: spin 4s linear infinite ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(0) translate(-50%, -50%);
+    transform: rotate(0) translate(-50%, -50%);
+    -webkit-animation: spin 4s linear infinite paused;
+    animation: spin 4s linear infinite;
 }
+
+
+
+/************************************************** contact.html *********************************/
+
+.bg-section-contact {
+    background-color: #eeeeee;
+}
+
+
+.contact-form-wrapper {
+    padding: 50px 40px 100px 40px;
+}
+
+.opinions-wrapper {
+    padding: 0px 20px 0px 20px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.date, .time{
+    margin-bottom:15px;
+    margin-bottom:0px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+                text-align: left;
+    }
+    
+    .contact-form-wrapper {
+    padding: 0px 100px 90px 100px;
+}
+
+.opinions-wrapper {
+    padding: 0px 100px 0px 40px;
+}
+}
+
