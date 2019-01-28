@@ -59,11 +59,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item nav-item-menu active"><a href="theband.html"><i class="fa fa-music hidden-xs"></i><span class="page">The Band</span> <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="theband.html"><i class="fa fa-music hidden-xs"></i><span class="page">The Band</span> <span class="sr-only">(current)</span></a></li>
                                 <li class="nav-item nav-item-menu"><a href="news.html"><i class="fa fa-newspaper-o hidden-xs"></i><span class="page">News</span></a></li>
                                 <li class="nav-item nav-item-menu"><a href="listen.html"><i class="fa fa-music hidden-xs"></i><span class="page">Listen</span></a></li>
-                                <li class="nav-item nav-item-menu"><a href="contact.html"><i class="fa fa-comments hidden-xs"></i><span class="page">Contact</span></a></li>
-                                <li class="nav-item subscribe"><a href="#" class="btn btn-success" type="submit" data-toggle="modal" data-target="#myModal">Subscribe</a></li>
+                                <li class="nav-item nav-item-menu active"><a href="contact.html"><i class="fa fa-comments hidden-xs"></i><span class="page">Contact</span></a></li>
+                                <li class="nav-item subscribe"><a href="#" class="btn btn-success2" type="submit" data-toggle="modal" data-target="#myModal">Subscribe</a></li>
                             </ul>
 
 
@@ -93,22 +93,23 @@
 
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="email1" class="col-xs-2 control-label">Email:</label>
-                            <div class="col-xs-10">
+                            <label for="email1" class="col-sm-2 control-label hidden-xs">Email:</label>
+                            <div class="col-sm-10">
                                 <input type="email" name="email1" class="form-control" id="email1" placeholder="Enter your email" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name1" class="col-xs-2 control-label">Name:</label>
-                            <div class="col-xs-10">
+                            <label for="name1" class="col-sm-2 control-label hidden-xs">Name:</label>
+                            <div class="col-sm-10">
                                 <input type="text" name="name1" class="form-control" id="name1" placeholder="Enter your name" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="event" class="col-xs-2 control-label">Event:</label>
-                            <div class="col-xs-10">
+                            <label for="event" class="col-sm-2 control-label hidden-xs">Event:</label>
+                            <div class="col-sm-10">
                                 <select class="form-control" name="event" id="event" required>
+                                    <option disabled selected>Select the type of event</option>
                                     <option>Weeding</option>
                                     <option>Birthday</option>
                                     <option>Corporate Event</option>
@@ -122,15 +123,16 @@
 
 
                         <div class="form-group">
-                            <label for="date" class="col-sm-2 col-xs-2 control-label">Date:</label>
-                            <div class="col-sm-4 col-xs-10">
+                            <label for="date" class="col-sm-2 control-label hidden-xs">Date:</label>
+                            <div class="col-sm-6 col-xs-12">
                                 <input class="form-control date" type="date" id="date" name="date">
                             </div>
-                           
-                            
-                           <label for="time" class="col-sm-2 col-xs-2 control-label">Time:</label>
-                            <div class="col-sm-4  col-xs-10">
+
+
+                            <label for="time" class="col-sm-1 control-label control-label-time hidden-xs">Time:</label>
+                            <div class="col-sm-3  col-xs-12">
                                 <select class="form-control time" name="time" id="time" required>
+                                     <option disabled selected>Select the time</option>
                                     <option>12:00</option>
                                     <option>14:00</option>
                                     <option>15:00</option>
@@ -145,8 +147,8 @@
                                     
                                 </select>
                             </div>
-                           
-                           
+
+
                         </div>
 
 
@@ -157,7 +159,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                           
+
                             <div class="col-xs-12">
                                 <textarea class="form-control" rows="5" name="comments" id="comments" placeholder="Tell us more about the event. (optional)"></textarea>
                             </div>
@@ -165,10 +167,11 @@
 
 
                         <div class="form-group">
-                            <div class="col-sm-offset-5 col-sm-7">
-                                <input type="reset" class="btn btn-default" value="Cancel">
-                                <button type="submit" class="btn btn-default">Sign in</button>
-
+                            <div class="col-xs-12">
+                                <div class="wrapper-buttons">
+                                    <input type="reset" class="btn btn-default btn-reset" value="Cancel">
+                                    <button type="submit" class="btn btn-default btn-lg btn-signin">Sign in</button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -193,7 +196,7 @@
                                 </div>
                                 <div class="media-body">
                                     <blockquote>
-                                        <p><i class="fa fa-quote-left"></i> The best present in our weeding day was to see the Monkees play live in our special day! <i class="fa fa-quote-right"></i></p>
+                                        <p><i class="fa fa-quote-left"></i>The best present in our weeding day was to see the Monkees play live in our special day!<i class="fa fa-quote-right"></i></p>
                                         <p>- Peter and Sarah</p>
                                     </blockquote>
                                 </div>
@@ -201,7 +204,7 @@
                             <div class="media">
                                 <div class="media-body">
                                     <blockquote>
-                                        <p><i class="fa fa-quote-left"></i> I have never seen my dad as happy as he was on his 70's bithday when he received the visit from the Monkees. <i class="fa fa-quote-right"></i></p>
+                                        <p><i class="fa fa-quote-left"></i>I have never seen my dad as happy as he was on his 70's bithday when he received the visit from the Monkees.<i class="fa fa-quote-right"></i></p>
                                         <p>- Nick</p>
                                     </blockquote>
                                 </div>
@@ -210,8 +213,8 @@
                                 </div>
 
                             </div>
-                            
-                             <div class="media">
+
+                            <div class="media">
                                 <div class="media-left hidden-xs">
                                     <img class="media-object img-thumbnail" src="images/opinion3.jpg" alt="opinion3" width="120">
                                 </div>
@@ -222,7 +225,7 @@
                                     </blockquote>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
 

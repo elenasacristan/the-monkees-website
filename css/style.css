@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,500|Roboto:400');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,500|Cuprum:400,700');
 
 
 
@@ -12,7 +12,7 @@ body {
     padding: 0px;
     margin: 0px;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-weight: 400;
     font-size: 18px;
 
@@ -30,11 +30,19 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul,
+li,
+progress,
+.col-xs-12{
     margin: 0px;
     padding: 0px;
 }
 
+.btn {
+    font-family: "Bangers", sans-serif;
+    letter-spacing: 1px;
+}
 
 /******************************* index.html *********************************************/
 
@@ -391,7 +399,8 @@ nav ul li {
 
 }
 
-.btn-success {
+.btn-success2,
+.btn-signin {
     color: #fff;
     background-color: #de8e15;
     border-color: transparent;
@@ -406,9 +415,9 @@ nav ul li {
 
 }
 
-.btn-success.active,
-.btn-success:active,
-.open>.dropdown-toggle.btn-success {
+.btn-success2.active,
+.btn-success2:active,
+.open>.dropdown-toggle.btn-success2 {
     color: #fff;
     border: none;
 }
@@ -532,7 +541,8 @@ nav ul li {
         border: none;
     }
 
-    .btn-success {
+    .btn-success2,
+    .btn-signin {
         color: #fff;
         background-color: #ff8a00;
         box-shadow: 1px 2px 4px 0px #0b1752;
@@ -543,19 +553,22 @@ nav ul li {
 
     }
 
-    .btn-success.active,
-    .btn-success:active,
-    .open>.dropdown-toggle.btn-success,
+    .btn-success2.active,
+    .btn-success2:active,
+    .open>.dropdown-toggle.btn-success2,
     .navbar-default .navbar-nav>.subscribe>a:focus,
-    .navbar-default .navbar-nav>.subscribe>a:hover {
+    .navbar-default .navbar-nav>.subscribe>a:hover,
+    .btn-signin.active,
+    .btn-signin:focus,
+    .btn-signin:hover {
 
         color: #fff;
         background-color: #ffae00;
         box-shadow: 1px 2px 4px 0px #0b1752;
     }
 
-    .btn-success.focus,
-    .btn-success:focus {
+    .btn-success2.focus,
+    .btn-success2:focus {
 
         border-color: transparent;
     }
@@ -564,29 +577,34 @@ nav ul li {
 
 
 
-.btn-success.active.focus,
-.btn-success.active:focus,
-.btn-success.active:hover,
-.btn-success:active.focus,
-.btn-success:active:focus,
-.btn-success:active:hover,
-.open>.dropdown-toggle.btn-success.focus,
-.open>.dropdown-toggle.btn-success:focus,
-.open>.dropdown-toggle.btn-success:hover {
+.btn-success2.active.focus,
+.btn-success2.active:focus,
+.btn-success2.active:hover,
+.btn-success2:active.focus,
+.btn-success2:active:focus,
+.btn-success2:active:hover,
+.open>.dropdown-toggle.btn-success2.focus,
+.open>.dropdown-toggle.btn-success2:focus,
+.open>.dropdown-toggle.btn-success2:hover {
     color: #fff;
     background-color: #398439;
     border: none;
 }
 
 
-.btn-success.focus,
-.btn-success:focus {
+.btn-success2.focus,
+.btn-success2:focus {
     border-color: transparent;
 }
 
 
 
 /****************SECTION contact.html***********/
+
+.bg-section {
+    background-color: #eeeeee;
+}
+
 
 .bg-contact {
     background-color: yellow;
@@ -979,27 +997,16 @@ footer h5 {
 
 /******************************************* listen.html *********************************************/
 
-@media (min-width: 768px) {
-
-    .newmusic {
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    .classics {
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-
-    }
+.wrapper-albums {
+    padding: 0px 90px;
 }
+
+.bg-section-listen {
+    background-color: #eeeeee;
+}
+
+
+
 
 
 .music-column {
@@ -1037,7 +1044,8 @@ footer h5 {
 audio {
     width: 100%;
     margin-top: 20px;
-
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #777777;
 
 }
 
@@ -1048,10 +1056,39 @@ audio {
 }
 
 
-.title-song {
+.title-song,
+.title-album {
     text-align: center;
     margin-top: 25px;
 }
+
+.new-album {
+    padding: 30px 0px;
+}
+
+iframe {
+    border-style: outset;
+}
+
+.new-album .iframeframe {
+    padding: 20px 25px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, darkgrey, #fafafa);
+    box-shadow: 1px 1px 1px 1px #777777;
+
+}
+
+
+.follow-spotify {
+
+    width: 30%;
+    margin: 0 auto;
+    padding: 0px
+}
+
+
+
+
 
 .buy-download-share {
     text-align: center;
@@ -1124,6 +1161,27 @@ audio {
     animation: spin 4s linear infinite;
 }
 
+@media (min-width: 768px) {
+
+    .newmusic {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .classics {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+    }
+}
 
 
 /************************************************** contact.html *********************************/
@@ -1137,6 +1195,10 @@ audio {
     padding: 50px 40px 100px 40px;
 }
 
+.form-horizontal .col-sm-10, .form-horizontal .col-xs-6{
+    padding-right: 0px;
+}
+
 .opinions-wrapper {
     padding: 0px 20px 0px 20px;
 }
@@ -1145,25 +1207,260 @@ audio {
     width: 100%;
 }
 
-.date, .time{
-    margin-bottom:15px;
-    margin-bottom:0px;
+.date,
+.time {
+    margin-bottom: 15px;
+
+}
+
+.form-horizontal .col-sm-10, .form-horizontal .col-xs-6 {
+    padding-left: 0px;
+}
+
+.form-horizontal label{
+    padding-left: 0px;
 }
 
 
+
+
+.fa-quote-left {
+    font-size: 20px;
+    color: #de8e15;
+    padding-right: 5px;
+    text-shadow: 1px 1px #000000;
+}
+
+.fa-quote-right {
+    font-size: 20px;
+    color: #de8e15;
+    padding-left: 5px;
+    text-shadow: 1px 1px #000000;
+}
+
+
+.wrapper-buttons {
+    width: 200px;
+    margin: 0px auto;
+    white-space: nowrap;
+
+}
+
+.wrapper-buttons .btn-default{
+  transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;   
+}
+
+.wrapper-buttons .btn-default:hover, .wrapper-buttons .btn-default:focus{
+    background-color: #cec8c8;
+  color:#ffffff;  
+}
+
+.btn-reset {
+    background-color: #bcbcbc;
+    color: white;
+    box-shadow: 1px 1px 1px 1px #555555;
+    margin-right: 20px;
+}
 
 
 @media (min-width: 768px) {
     .form-horizontal .control-label {
-                text-align: left;
+        text-align: left;
     }
-    
+
     .contact-form-wrapper {
-    padding: 0px 100px 90px 100px;
+        padding: 0px 100px 90px 100px;
+    }
+
+    .opinions-wrapper {
+        padding: 0px 100px 0px 40px;
+    }
+
+    .control-label-time {
+        padding-left: 0px;
+    }
+
+    .date {
+   
+    width: 120px;
+    padding-left: 15px;
+    float:left;
+    
 }
 
-.opinions-wrapper {
-    padding: 0px 100px 0px 40px;
+.form-horizontal .col-sm-10, .form-horizontal .col-xs-6 {
+    padding-left: 0px;
 }
+    
 }
+
+
+
+/*********************************** NEWS *************************************/
+
+/***** I watch a video about responsive iframes in youtube "https://www.youtube.com/watch?v=X4t0JxiBeO0"*****/
+
+.news-video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+
+
+
+.news-video iframe {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    border: 10px solid white;
+    box-shadow: 1px 1px 1px 1px #777777;
+     transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+
+
+.news-video iframe:hover {
+    box-shadow: 2px 2px 2px 2px #34a271;
+}
+
+
+.page-subtitle {
+    margin-left: 0px;
+}
+
+.videos-wrapper {
+    padding-left:120px;
+}
+
+.video-block h3 {
+    font-weight: 700;
+}
+
+.video2 {
+    margin-top: 120px;
+}
+
+
+
+
+
+ul li {
+    list-style: none;
+}
+
+.bg-concerts{
+    padding: 0px 50px 0px 40px;
+    
+}
+
+.concert-list{
+   margin-bottom: 60px;
+}
+
+.concert-place{
+    font-weight: 700;
+    font-size:16px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.concert-day{
+ font-weight: 400;
+    font-size:19px;
+    white-space: nowrap;
+   margin: 20px 0px 20px 0px;
+}
+
+
+.bg-concerts .col-xs-5, .bg-concerts .col-xs-7{
+    margin: 0px;
+    padding: 0px;
+      
+}
+
+.bg-concerts .col-xs-5{
+       text-align: right;
+
+}
+
+
+.concert-buy h3 i{
+    font-size: 20px;
+
+}
+
+.concert-buy a .btn {
+    font-size: 20px;
+    padding-right: 5px;
+
+}
+
+.btn-success {
+    margin-top: 20px;
+    
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 30px;
+     transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    
+}
+
+.progress {
+       background-color: #ffffff;
+       height: 30px;
+       
+}
+
+.progress-bar{
+    font-size: 90%;
+    font-weight: bolder;
+    color:#242c51;
+    padding-top: 5px;
+    
+}
+
+
+
+.label-warning{
+    animation: warning 1.5s ease-in-out infinite; 
+}
+
+@keyframes warning {
+	from {color: transparent}
+	to{color: #ffffff}
+	
+}
+
+
+
+.modal-body{
+    width:80%;
+    margin: 0 auto;
+}
+
+
+#myModal2 p{
+  margin-bottom: 30px;
+    
+}
+
+#myModal2 p .text-muted{
+    font-size: 14px;
+}
+
+
+
 
