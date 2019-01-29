@@ -36,7 +36,7 @@
                 <!----------LOGO------------->
 
                 <div class="col-xs-6 col-sm-2 logo">
-                    <a href="index.html"><img src="images/logo.png"></img></a>
+                    <a href="index.html"><img src="images/logo.png" alt="Monkees logo"></img></a>
                 </div>
 
 
@@ -380,7 +380,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -391,26 +391,26 @@
 
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="InputName" placeholder="Enter your name" required>
+                            <input type="text" name="name" class="form-control" id="InputName" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="InputEmail1" placeholder="Enter your email" required>
+                            <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="InputPassword1" placeholder="type a password" required>
+                            <input type="password"  name="password" class="form-control" id="InputPassword1" placeholder="type a password" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="InputPassword2" placeholder="type your password again" required>
+                            <input type="password" name="password2" class="form-control" id="InputPassword2" placeholder="type your password again" required>
                         </div>
                         <div class="wrapper-check">
                             <div class="checkbox newsletter">
                                 <label>
-                                 <input type="checkbox"  checked> Subscribe me to the monthly newsletter.
-                            </label>
+                                 <input type="checkbox"  name="subscribe" checked> Subscribe me to the monthly newsletter.
+                                </label>
                             </div>
                             <div class="checkbox offers">
                                 <label>
-                                 <input type="checkbox" > Send emails with offers about concerts.
+                                 <input type="checkbox" name="offers"> Send emails with offers about concerts.
                             </label>
                             </div>
                         </div>
@@ -443,10 +443,10 @@
 
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="InputName_book" placeholder="Enter your name" required>
+                            <input type="text" name="name_book" class="form-control" id="InputName_book" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="InputEmail1_book" placeholder="Enter your email" required>
+                            <input type="email" name="email_book" class="form-control" id="InputEmail1_book" placeholder="Enter your email" required>
                         </div>
 
 

@@ -8,14 +8,15 @@ html,
 body {
     height: 100%;
     /*width: 100%;*/
-    background-color: white;
+    /*background-color: white;*/
     padding: 0px;
     margin: 0px;
     overflow-x: hidden;
+    /*to make the scrolling bar at the bottom dissapear*/
     font-family: 'Cuprum', sans-serif;
+    /* set the default test to Cuprum*/
     font-weight: 400;
-    font-size: 18px;
-
+    font-size: 16px;
 
 }
 
@@ -34,13 +35,14 @@ h4,
 ul,
 li,
 progress,
-.col-xs-12{
+.col-xs-12 {
     margin: 0px;
     padding: 0px;
 }
 
 .btn {
     font-family: "Bangers", sans-serif;
+    /*common font for all the buttons*/
     letter-spacing: 1px;
 }
 
@@ -53,6 +55,7 @@ header {
     /*  height: 100%;  */
 }
 
+/* header for small screens */
 
 .hight20-0 {
     padding: 10px;
@@ -69,12 +72,12 @@ header {
     height: 100%;
     display: block;
     margin: auto;
-    top: 60px;
+    top: 50px;
     left: 0;
     right: 0;
-    bottom: 0;
+    /* bottom: 0;*/
     z-index: 1;
-    /* so it apperas on top of the carousel */
+    /* so it apperas on top of the carousel and header*/
 }
 
 
@@ -115,41 +118,9 @@ header {
 }
 
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-
-}
-
-
-/* These three overlay are in case I want to use a different overlay for each picture*/
-
-/*
-.overlay1 {
-    background-color: rgba(229, 211, 160, 0.3);
-}
-
-.overlay2 {
-    background-color: rgba(229, 211, 160, 0.3);
-}
-
-.overlay3 {
-    background-color: rgba(229, 211, 160, 0.3);
-}
-
-*/
 
 .carousel-indicators {
     margin-bottom: 20px;
-
-}
-
-.carousel-indicators li:active {
-    background-color: #de8e15;
-    width: 15px;
-    height: 15px;
 
 }
 
@@ -168,6 +139,11 @@ header {
     width: 15px;
     height: 15px;
 }
+
+.carousel-indicators li:active {
+    background-color: #de8e15;
+}
+
 
 
 .glyphicon.glyphicon-chevron-right {
@@ -194,37 +170,42 @@ header {
 
 
 .circle {
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     width: 220px;
     height: 220px;
-    border-radius: 200px;
+    border-radius: 110px;
     background-color: #de8e15;
     position: absolute;
     bottom: 10%;
+    left: 10%;
 
 }
 
 
-footer img {
+.hight20 img {
     position: absolute;
     width: 220px;
     height: auto;
     bottom: 15px;
     left: 15px;
+    z-index: 3;
 }
 
 
-footer p {
-    padding-top: 70px;
+.hight20 p {
     text-align: center;
+    padding-top: 50px;
 }
 
 
-footer p a {
+
+.hight20 p a {
+    text-align: center;
     font-family: 'Bangers', sans-serif;
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 4px;
+
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -233,8 +214,8 @@ footer p a {
 
 }
 
-footer p a:hover,
-footer p a:focus {
+.hight20 p a:hover,
+.hight20 p a:focus {
     color: #de8e15;
     text-decoration: none;
 
@@ -244,8 +225,8 @@ footer p a:focus {
 
 @media (min-width:768px) {
 
-    footer p a {
-        font-size: 40px;
+    .hight20 p a {
+        font-size: 50px;
     }
 
     /***** for desktop we want to display the carousel using the 80% 
@@ -254,11 +235,9 @@ footer p a:focus {
         height: 80%;
     }
 
-
-    footer p {
-        padding-top: 50px;
-    }
 }
+
+
 
 
 
@@ -828,14 +807,23 @@ footer h5 {
 .bandimage,
 .bandimage2 {
     text-align: center;
+    margin-bottom: 35px;
 }
 
+
+.bandimage img,
+.bandimage2 img {
+    width: 250px;
+}
+
+
+
 .textband {
-    margin-top: 35px;
+    /* margin-top: 35px;*/
 }
 
 .wrapper-section {
-    margin: 20px 25px;
+    margin: 60px 50px;
 }
 
 
@@ -861,6 +849,7 @@ footer h5 {
 
 .band-img-text-row {
     width: 100%;
+    margin: 0;
 }
 
 
@@ -896,31 +885,23 @@ footer h5 {
 }
 
 .member-info {
-    padding-bottom: 35px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-
 
 .members-img-text {
     margin-bottom: 25px
 }
 
 
-.bandimage2 img {
-    width: 300px;
-}
+
 
 @media (min-width: 768px) {
 
-    .wrapper-section {
+    /*.wrapper-section {
         margin: 60px 25px 60px 40px;
-    }
-
-    .member-wrapper {
-        padding-right: 135px;
-
-    }
-
-
+    }*/
     .bandimage {
         float: right;
         margin: 0px 0px 50px 80px;
@@ -932,18 +913,23 @@ footer h5 {
 
     }
 
+    .bandimage img {
+        width: 400px;
+    }
 
     .bandimage2 img {
-        width: 650px;
+        width: 500px;
     }
+
 
     .member-info {
-        padding: 0px 25px 40px 25px;
+        padding: 0px 60px 40px 60px;
     }
-
 
 
 }
+
+
 
 
 
@@ -951,11 +937,12 @@ footer h5 {
 /************************* discography********************************/
 
 .disco-wrapper {
-    width: 100%;
+    width: 40%;
+    margin: 0 auto;
     padding-left: 60px;
     border-left: 2px solid black;
-
 }
+
 
 .discography {
     position: relative;
@@ -993,6 +980,19 @@ footer h5 {
     font-size: 18px
 }
 
+
+@media (min-width: 1200px) {
+
+    .discography-wrapper {
+        padding-left: 120px;
+    }
+
+    .disco-wrapper {
+        width: 100%;
+        padding-left: 60px;
+        border-left: 2px solid black;
+    }
+}
 
 
 /******************************************* listen.html *********************************************/
@@ -1195,7 +1195,8 @@ iframe {
     padding: 50px 40px 100px 40px;
 }
 
-.form-horizontal .col-sm-10, .form-horizontal .col-xs-6{
+.form-horizontal .col-sm-10,
+.form-horizontal .col-xs-6 {
     padding-right: 0px;
 }
 
@@ -1213,11 +1214,12 @@ iframe {
 
 }
 
-.form-horizontal .col-sm-10, .form-horizontal .col-xs-6 {
+.form-horizontal .col-sm-10,
+.form-horizontal .col-xs-6 {
     padding-left: 0px;
 }
 
-.form-horizontal label{
+.form-horizontal label {
     padding-left: 0px;
 }
 
@@ -1246,16 +1248,17 @@ iframe {
 
 }
 
-.wrapper-buttons .btn-default{
-  transition: all .3s ease-in-out;
+.wrapper-buttons .btn-default {
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;   
+    -o-transition: all .3s ease-in-out;
 }
 
-.wrapper-buttons .btn-default:hover, .wrapper-buttons .btn-default:focus{
+.wrapper-buttons .btn-default:hover,
+.wrapper-buttons .btn-default:focus {
     background-color: #cec8c8;
-  color:#ffffff;  
+    color: #ffffff;
 }
 
 .btn-reset {
@@ -1284,17 +1287,18 @@ iframe {
     }
 
     .date {
-   
-    width: 120px;
-    padding-left: 15px;
-    float:left;
-    
-}
 
-.form-horizontal .col-sm-10, .form-horizontal .col-xs-6 {
-    padding-left: 0px;
-}
-    
+        width: 120px;
+        padding-left: 15px;
+        float: left;
+
+    }
+
+    .form-horizontal .col-sm-10,
+    .form-horizontal .col-xs-6 {
+        padding-left: 0px;
+    }
+
 }
 
 
@@ -1320,7 +1324,7 @@ iframe {
     height: 100%;
     border: 10px solid white;
     box-shadow: 1px 1px 1px 1px #777777;
-     transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -1338,7 +1342,7 @@ iframe {
 }
 
 .videos-wrapper {
-    padding-left:120px;
+    padding-left: 120px;
 }
 
 .video-block h3 {
@@ -1357,44 +1361,45 @@ ul li {
     list-style: none;
 }
 
-.bg-concerts{
+.bg-concerts {
     padding: 0px 50px 0px 40px;
-    
+
 }
 
-.concert-list{
-   margin-bottom: 60px;
+.concert-list {
+    margin-bottom: 60px;
 }
 
-.concert-place{
+.concert-place {
     font-weight: 700;
-    font-size:16px;
+    font-size: 16px;
     margin-bottom: 10px;
     text-align: left;
     line-height: 25px;
 }
 
-.concert-day{
- font-weight: 400;
-    font-size:19px;
+.concert-day {
+    font-weight: 400;
+    font-size: 19px;
     white-space: nowrap;
-   margin: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 
-.bg-concerts .col-xs-5, .bg-concerts .col-xs-7{
+.bg-concerts .col-xs-5,
+.bg-concerts .col-xs-7 {
     margin: 0px;
     padding: 0px;
-      
-}
-
-.bg-concerts .col-xs-5{
-       text-align: right;
 
 }
 
+.bg-concerts .col-xs-5 {
+    text-align: right;
 
-.concert-buy h3 i{
+}
+
+
+.concert-buy h3 i {
     font-size: 20px;
 
 }
@@ -1407,60 +1412,60 @@ ul li {
 
 .btn-success {
     margin-top: 20px;
-    
+
     margin-bottom: 20px;
     width: 100px;
     border-radius: 30px;
-     transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-    
+
 }
 
 .progress {
-       background-color: #ffffff;
-       height: 30px;
-       
+    background-color: #ffffff;
+    height: 30px;
+
 }
 
-.progress-bar{
+.progress-bar {
     font-size: 90%;
     font-weight: bolder;
-    color:#242c51;
+    color: #242c51;
     padding-top: 5px;
-    
+
 }
 
 
 
-.label-warning{
-    animation: warning 1.5s ease-in-out infinite; 
+.label-warning {
+    animation: warning 1.5s ease-in-out infinite;
 }
 
 @keyframes warning {
-	from {color: transparent}
-	to{color: #ffffff}
-	
+    from {
+        color: transparent
+    }
+    to {
+        color: #ffffff
+    }
+
 }
 
 
 
-.modal-body{
-    width:80%;
+.modal-body {
+    width: 80%;
     margin: 0 auto;
 }
 
 
-#myModal2 p{
-  margin-bottom: 30px;
-    
+#myModal2 p {
+    margin-bottom: 30px;
+
 }
 
-#myModal2 p .text-muted{
+#myModal2 p .text-muted {
     font-size: 14px;
 }
-
-
-
-
