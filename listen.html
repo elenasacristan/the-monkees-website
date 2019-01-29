@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-    <link rel="stylesheet" href="css/style1.css">
+    <!--<link rel="stylesheet" href="css/style1.css">-->
 
     <!-- My style sheet to update the original template-->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -65,10 +65,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item nav-item-menu"><a href="theband.html"><i class="fa fa-music hidden-xs"></i><span class="page">The Band</span> <span class="sr-only">(current)</span></a></li>
-                                <li class="nav-item nav-item-menu"><a href="news.html"><i class="fa fa-newspaper-o hidden-xs"></i><span class="page">News</span></a></li>
-                                <li class="nav-item nav-item-menu active"><a href="listen.html"><i class="fa fa-music hidden-xs"></i><span class="page">Listen</span></a></li>
-                                <li class="nav-item nav-item-menu"><a href="contact.html"><i class="fa fa-comments hidden-xs"></i><span class="page">Contact</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="theband.html"><i class="fa fa-music hidden-xs" aria-hidden="true"></i><span class="page">The Band</span> <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="news.html"><i class="fa fa-newspaper-o hidden-xs" aria-hidden="true"></i><span class="page">News</span></a></li>
+                                <li class="nav-item nav-item-menu active"><a href="listen.html"><i class="fa fa-music hidden-xs" aria-hidden="true"></i><span class="page">Listen</span></a></li>
+                                <li class="nav-item nav-item-menu"><a href="contact.html"><i class="fa fa-comments hidden-xs" aria-hidden="true"></i><span class="page">Contact</span></a></li>
                                 <li class="nav-item subscribe"><a href="#" class="btn btn-success2" type="submit" data-toggle="modal" data-target="#myModal">Subscribe</a></li>
                             </ul>
 
@@ -92,7 +92,7 @@
 
         <!------------------ Newest record------------------------>
 
-        <div class="row newmusic-classics">
+        <div class="row">
             <div class="col-xs-12 col-sm-6 newmusic music-column">
                 <div class="row">
                     <div class="col-xs-12">
@@ -101,10 +101,6 @@
                 </div>
 
                 <div class="row">
-
-
-
-
                     <div class="col-xs-12 wrapper-song">
                         <div class="row wrapper-albums">
 
@@ -162,8 +158,6 @@
                 </div>
             </div>
 
-
-
             <div class="col-xs-12 col-sm-6 classics music-column">
                 <div class="row">
                     <div class="col-xs-12">
@@ -172,15 +166,14 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-xs-12 col-md-6 wrapper-song">
+                    <div class="col-xs-12 col-lg-6 wrapper-song">
                         <div class="row wrapper-player">
-                            <div class="row">
                                 <div class="col-xs-12 album">
-                                    <div class="cover imgcover">
-                                        <div><img class="img-circle" src="images/album.jpg" alt="picture album Monkees" /></div>
-                                    </div>
+                                    <!--<div class="cover imgcover">-->
+                                        <img class="img-circle" src="images/album.jpg" alt="picture album Monkees" width="150"/>
+                                   <!-- </div>-->
                                 </div>
-                            </div>
+                            
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title-song">
@@ -201,7 +194,7 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share lyrics">
                                     <p>Download the lyrics!
-                                        <a href="text/Daydream Believer.docx" target="_blank"><i class="song-links fa fa-download"></i></a>
+                                        <a href="text/Daydream Believer.docx" target="_blank"><i class="song-links fa fa-download" aria-hidden="true"></i></a>
                                     </p>
                                 </div>
 
@@ -210,8 +203,8 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share share-buy">
 
-                                    <a href="#"><i class="song-links fa fa-share-alt"></i></a>
-                                    <a href="#"><i class="song-links fa fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="song-links fa fa-share-alt" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="song-links fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
@@ -220,15 +213,18 @@
 
 
 
-                    <div class="col-xs-12 col-md-6 wrapper-song">
+
+
+
+
+                    <div class="col-xs-12 col-lg-6 wrapper-song">
                         <div class="row wrapper-player">
-                            <div class="row">
-                                <div class="col-xs-12 album">
-                                    <div class="cover">
-                                        <div><img class="img-circle" src="images/album2.jpg" alt="picture album Monkees" /></div>
-                                    </div>
+                            <div class="col-xs-12 album">
+                                    <!--<div class="cover imgcover">-->
+                                        <img class="img-circle" src="images/album2.jpg" alt="picture album Monkees" width="150"/>
+                                   <!-- </div>-->
                                 </div>
-                            </div>
+                            
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title-song">
@@ -248,7 +244,7 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share lyrics">
                                     <p>Download the lyrics!
-                                        <a href="text/I'm a believer.docx" target="_blank"><i class="song-links fa fa-download"></i></a>
+                                        <a href="text/I'm a believer.docx" target="_blank"><i class="song-links fa fa-download" aria-hidden="true"></i></a>
                                     </p>
                                 </div>
 
@@ -257,8 +253,8 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share share-buy">
 
-                                    <a href="#"><i class="song-links fa fa-share-alt"></i></a>
-                                    <a href="#"><i class="song-links fa fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="song-links fa fa-share-alt" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="song-links fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
@@ -266,15 +262,19 @@
                     </div>
 
 
-                    <div class="col-xs-12 col-md-6 wrapper-song">
+                    <div class="col-xs-12 col-lg-6 wrapper-song">
                         <div class="row wrapper-player">
                             <div class="row">
                                 <div class="col-xs-12 album">
-                                    <div class="cover">
-                                        <div><img class="img-circle" src="images/cover.jpg" alt="picture album Monkees" /></div>
-                                    </div>
+                                    <!--<div class="cover imgcover">-->
+                                        <img class="img-circle" src="images/cover.jpg" alt="picture album Monkees" width="150"/>
+                                   <!-- </div>-->
                                 </div>
                             </div>
+                            
+                            
+                            
+                            
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title-song">
@@ -294,7 +294,7 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share lyrics">
                                     <p>Download the lyrics!
-                                        <a href="text/Steppin' Stone.docx" target="_blank"><i class="song-links fa fa-download"></i></a>
+                                        <a href="text/Steppin' Stone.docx" target="_blank"><i class="song-links fa fa-download" aria-hidden="true"></i></a>
                                     </p>
                                 </div>
 
@@ -303,8 +303,8 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share share-buy">
 
-                                    <a href="#"><i class="song-links fa fa-share-alt"></i></a>
-                                    <a href="#"><i class="song-links fa fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="song-links fa fa-share-alt" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="song-links fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
@@ -312,15 +312,16 @@
                     </div>
 
 
-                    <div class="col-xs-12 col-md-6 wrapper-song">
+                    <div class="col-xs-12 col-lg-6 wrapper-song">
                         <div class="row wrapper-player">
-                            <div class="row">
+                           <div class="row">
                                 <div class="col-xs-12 album">
-                                    <div class="cover">
-                                        <div><img class="img-circle" src="images/cover1.jpg" alt="picture album Monkees" /></div>
-                                    </div>
+                                    <!--<div class="cover imgcover">-->
+                                        <img class="img-circle" src="images/cover1.jpg" alt="picture album Monkees" width="150"/>
+                                   <!-- </div>-->
                                 </div>
                             </div>
+                            
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title-song">
@@ -340,7 +341,7 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share lyrics">
                                     <p>Download the lyrics!
-                                        <a href="text/Last Train to Clarksville.docx" target="_blank"><i class="song-links fa fa-download"></i></a>
+                                        <a href="text/Last Train to Clarksville.docx" target="_blank"><i class="song-links fa fa-download" aria-hidden="true"></i></a>
                                     </p>
                                 </div>
 
@@ -349,8 +350,8 @@
                             <div class="row">
                                 <div class="col-xs-12  buy-download-share share-buy">
 
-                                    <a href="#"><i class="song-links fa fa-share-alt"></i></a>
-                                    <a href="#"><i class="song-links fa fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="song-links fa fa-share-alt" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="song-links fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>

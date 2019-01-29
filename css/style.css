@@ -272,16 +272,16 @@ header {
 }
 
 
-/***** changing size and position for each screen   *****/
+/***** changing LOGO size and position for each screen size  *****/
 
 @media (min-width: 768px) and (max-width: 991px) {
     .logo img {
-        position: absolute;
+       /* position: absolute;*/
         width: 150px;
         height: 150px;
-        object-fit: contain;
+      /*  object-fit: contain;*/
         bottom: -70px;
-        z-index: 1;
+   /*     z-index: 1;*/
         padding-left: 15px;
     }
 
@@ -290,12 +290,12 @@ header {
 @media (min-width: 992px) {
     .logo img {
 
-        position: absolute;
+      /*   position: absolute;*/
         width: 210px;
         height: 210px;
-        object-fit: contain;
+     /*    object-fit: contain;*/
         bottom: -100px;
-        z-index: 1;
+    /*     z-index: 1;*/
         padding-left: 40px;
     }
 }
@@ -771,7 +771,7 @@ footer h5 {
 
 
 .header-content {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     height: 90px;
@@ -1005,14 +1005,9 @@ footer h5 {
     background-color: #eeeeee;
 }
 
-
-
-
-
 .music-column {
 
     padding: 25px 20px;
-
 }
 
 .wrapper-player {
@@ -1021,11 +1016,12 @@ footer h5 {
     height: 100%;
     padding: 50px 0px;
     margin: 0 auto;
-
 }
 
 
 
+
+/*
 
 .album {
     position: relative;
@@ -1038,7 +1034,70 @@ footer h5 {
 
 
 
+*/
 
+
+.album{
+    float: none;
+    margin: 0 auto;
+    position: relative;
+    
+    
+background-image: url("../images/Vynil.png"); /* The image used */
+   /* Used if the image is unavailable */
+  height: 250px; /* You must set a specified height */
+  width: 250px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+    
+    
+}
+    
+.album .img-circle{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left:20%;
+  box-shadow:1px 1px 10px 5px white inset; 
+
+}
+
+
+.album :hover{
+    animation:rotate 2s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  50%   { transform: rotate(180deg); }
+  100% {  transform: rotate(360deg); }
+}
+
+/*
+.album {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: black;
+
+}*/
+
+
+/*
+.imgcover{
+ position:relative;
+   top: 50%;
+  height: 100px;
+  margin-top: -50px;
+}
+
+*/
 
 
 audio {
@@ -1147,6 +1206,7 @@ iframe {
 
 }
 
+/*
 .cover img:hover {
     position: absolute;
     top: 50%;
@@ -1160,6 +1220,7 @@ iframe {
     -webkit-animation: spin 4s linear infinite paused;
     animation: spin 4s linear infinite;
 }
+*/
 
 @media (min-width: 768px) {
 
