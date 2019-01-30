@@ -1,31 +1,24 @@
+/*******************************  fonts imported from Google fonts *********************************************/
+
 @import url('https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,500|Cuprum:400,700');
 
 
-
-/*******************************  GENERAL *********************************************/
+/************************************************************  GENERAL *******************************************************************/
 
 html,
 body {
     height: 100%;
-    /*width: 100%;*/
-    /*background-color: white;*/
     padding: 0px;
     margin: 0px;
-    overflow-x: hidden;
-    /*to make the scrolling bar at the bottom dissapear*/
     font-family: 'Cuprum', sans-serif;
-    /* set the default test to Cuprum*/
+    /* set the default text to Cuprum*/
     font-weight: 400;
     font-size: 16px;
-
 }
-
-
 
 .uppercase {
     text-transform: uppercase;
 }
-
 
 p,
 h1,
@@ -46,14 +39,31 @@ progress,
     letter-spacing: 1px;
 }
 
-/******************************* index.html *********************************************/
-
-/******************************* small screens header ***********************************/
-
 header {
     width: 100%;
-    /*  height: 100%;  */
 }
+
+/*****  background color from main section in all pages *****/
+
+.bg-section {
+    background-color: #eeeeee;
+}
+
+.wrapper-section {
+    margin: 60px 40px;
+}
+
+.page-subtitle {
+    font-family: "Bangers", sans-serif;
+    margin-bottom: 35px;
+    margin-left: 16px;
+    font-size: 32px;
+    color: #555555;
+    text-align: center;
+}
+
+
+/*******************************  header index.html *********************************************/
 
 /* header for small screens */
 
@@ -68,18 +78,18 @@ header {
 
 .hight20-0 img {
     position: absolute;
-    /* places absolute in relation to hight-20-0 because is hight-20-0 is position:relative and img is absolute*/
+    /* placed absolute in relation to hight-20-0 because is hight-20-0 is position:relative and img is absolute*/
     height: 100%;
     display: block;
     margin: auto;
     top: 50px;
     left: 0;
     right: 0;
-    /* bottom: 0;*/
     z-index: 1;
     /* so it apperas on top of the carousel and header*/
 }
 
+/************************************************************ Index.html *****************************************************************/
 
 /******************************* Carousel *********************************************/
 
@@ -111,26 +121,20 @@ header {
     top: 0;
     left: 0;
     min-width: 100%;
-    /*height: auto;*/
     height: 100%;
     object-fit: cover;
     /*so the image doesn't lose the ratio*/
 }
 
-
-
 .carousel-indicators {
     margin-bottom: 20px;
-
 }
 
 
 .carousel-indicators .active {
-
     background-color: #de8e15;
     width: 15px;
     height: 15px;
-
 }
 
 
@@ -144,8 +148,6 @@ header {
     background-color: #de8e15;
 }
 
-
-
 .glyphicon.glyphicon-chevron-right {
     font-size: 50px;
     color: #de8e15;
@@ -158,7 +160,7 @@ header {
 
 
 
-/******************************* Footer index.html ***********************************/
+/******************************* Footer index.html ************************************/
 
 .hight20 {
     padding: 0px;
@@ -170,7 +172,6 @@ header {
 
 
 .circle {
-    /*margin-left: 10%;*/
     width: 220px;
     height: 220px;
     border-radius: 110px;
@@ -178,9 +179,7 @@ header {
     position: absolute;
     bottom: 10%;
     left: 10%;
-
 }
-
 
 .hight20 img {
     position: absolute;
@@ -191,13 +190,10 @@ header {
     z-index: 3;
 }
 
-
 .hight20 p {
     text-align: center;
     padding-top: 50px;
 }
-
-
 
 .hight20 p a {
     text-align: center;
@@ -205,23 +201,19 @@ header {
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 4px;
-
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-
-
 }
 
 .hight20 p a:hover,
 .hight20 p a:focus {
     color: #de8e15;
     text-decoration: none;
-
 }
 
-/******************************* media queries for index.html ***********************************/
+/******************************* media queries for index.html *************************/
 
 @media (min-width:768px) {
 
@@ -238,13 +230,9 @@ header {
 }
 
 
+/************************************* band.html, contact.html, listen.html, news.html *****************************************************/
 
-
-
-
-/*******************************band.html, contact.html, listen.html, news.html ***********************************/
-
-/******************************* header ****************************************/
+/******************************* general header for band.html, contact.html, listen.html, news.html ****************************************/
 
 .wrapper-header {
     background-color: #de8e15;
@@ -252,8 +240,9 @@ header {
     height: 90px;
 }
 
+/************************************** header, nav bar and footer for theband.html, listen.html, news.html, contact.html******************/
 
-/******************************* header logo ************************************/
+/************************************ header logo ************************/
 
 .logo {
     height: 90px;
@@ -268,7 +257,6 @@ header {
     bottom: -80px;
     z-index: 1;
     padding-left: 45px;
-
 }
 
 
@@ -276,36 +264,28 @@ header {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .logo img {
-        /* position: absolute;*/
         width: 150px;
         height: 150px;
-        /*  object-fit: contain;*/
         bottom: -70px;
-        /*     z-index: 1;*/
         padding-left: 15px;
     }
-
 }
 
 @media (min-width: 992px) {
     .logo img {
-
-        /*   position: absolute;*/
         width: 210px;
         height: 210px;
-        /*    object-fit: contain;*/
         bottom: -100px;
-        /*     z-index: 1;*/
         padding-left: 40px;
     }
 }
 
+/*************************************************** NAVIGATION BAR, FOOTER AND MODAL FOR ALL ****************/
 
-/******************************* navigation bar ************************************/
+/******************* navigation bar  ************************************/
 
 .bg-nav {
     min-height: 90px;
-
 }
 
 .navbar-default {
@@ -313,7 +293,7 @@ header {
     border: none;
 }
 
-/******************************* hamburger button ************************************/
+/****** hamburger button *******/
 
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus,
@@ -321,7 +301,6 @@ header {
     border-color: transparent;
     background-color: transparent;
     margin-top: 25px;
-
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -330,8 +309,6 @@ header {
     height: 6px;
     margin-bottom: 6px;
 }
-
-
 
 nav ul li .page {
     white-space: nowrap;
@@ -347,10 +324,7 @@ nav ul li .page {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-
-
 }
-
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover,
@@ -361,12 +335,6 @@ nav ul li .page {
     background-color: transparent;
 }
 
-
-
-
-
-
-
 nav ul li {
     background-color: #de8e15;
     border-bottom: 1px solid #0b1752;
@@ -374,9 +342,9 @@ nav ul li {
     border-left: 1px solid #0b1752;
     padding-bottom: 10px;
     padding-top: 10px;
-
-
 }
+
+/************ btn-signin is from the contact.html ***********/
 
 .btn-success2,
 .btn-signin {
@@ -386,12 +354,10 @@ nav ul li {
 }
 
 
-
 .nav>li>a:hover {
     color: #fff;
     background-color: #de8e15;
     border-color: transparent;
-
 }
 
 .btn-success2.active,
@@ -400,7 +366,6 @@ nav ul li {
     color: #fff;
     border: none;
 }
-
 
 .navbar-collapse {
     position: relative;
@@ -414,7 +379,7 @@ nav ul li {
 }
 
 
-/******************************* media queries for bigger screens ************************************/
+/************* media queries for bigger screens *************/
 
 @media (min-width: 768px) {
     .navbar-nav {
@@ -423,11 +388,9 @@ nav ul li {
         margin: 0 auto;
     }
 
-
     .navbar-collapse.collapse {
         height: 90px;
         margin-top: 0px;
-
     }
 
     .navbar-nav>.nav-item-menu>a {
@@ -439,11 +402,8 @@ nav ul li {
     }
 
     .navbar-default .navbar-nav>li>a {
-
         font-size: 20px;
-
     }
-
 
     .nav-item {
         width: 20%;
@@ -454,10 +414,7 @@ nav ul li {
 
     .nav>li>a {
         display: inline-block;
-
     }
-
-
 
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus,
@@ -465,8 +422,6 @@ nav ul li {
         background-color: transparent;
         color: #0b1752;
     }
-
-
 
     .navbar-default .navbar-nav>li>a {
         color: #fff;
@@ -486,7 +441,6 @@ nav ul li {
         height: 90px;
     }
 
-
     .collapse ul .subscribe .btn {
         padding-top: 10px;
         height: 45px;
@@ -495,12 +449,10 @@ nav ul li {
         margin-bottom: 20px;
     }
 
-
-
     .navbar-default .navbar-nav>.subscribe>a:focus,
     .navbar-default .navbar-nav>.subscribe>a:hover {
         color: #fff;
-        background-color: #449c44;
+        background-color: #ffae00;
     }
 
     nav ul li i {
@@ -508,11 +460,8 @@ nav ul li {
         padding-bottom: 10px
     }
 
-
     nav ul li .page {
         display: block;
-
-
     }
 
     nav ul li {
@@ -529,7 +478,6 @@ nav ul li {
         -webkit-transition: all .3s ease-in-out;
         -moz-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
-
     }
 
     .btn-success2.active,
@@ -537,10 +485,7 @@ nav ul li {
     .open>.dropdown-toggle.btn-success2,
     .navbar-default .navbar-nav>.subscribe>a:focus,
     .navbar-default .navbar-nav>.subscribe>a:hover,
-    .btn-signin.active,
-    .btn-signin:focus,
-    .btn-signin:hover {
-
+        {
         color: #fff;
         background-color: #ffae00;
         box-shadow: 1px 2px 4px 0px #0b1752;
@@ -548,10 +493,8 @@ nav ul li {
 
     .btn-success2.focus,
     .btn-success2:focus {
-
         border-color: transparent;
     }
-
 }
 
 
@@ -576,26 +519,7 @@ nav ul li {
     border-color: transparent;
 }
 
-
-
-/****************SECTION contact.html***********/
-
-.bg-section {
-    background-color: #eeeeee;
-}
-
-
-.bg-contact {
-    background-color: yellow;
-    /*height: 100%;*/
-}
-
-/****************SECTION band.html***********/
-
-/****************FOOTER*******************/
-
-
-
+/******************************** FOOTER  ************************************/
 
 .bg-all-footer {
     background-color: #86a875;
@@ -604,7 +528,7 @@ nav ul li {
 
 }
 
-
+/*****  contact footer  *****/
 
 .footer h5 {
     margin-top: 3px;
@@ -616,18 +540,17 @@ nav ul li {
 
 .bg-contactus {
     padding-left: 30px;
-  padding-top: 11px;
+    padding-top: 11px;
     padding-bottom: 5px;
 }
 
-
 .dl-horizontal {
     font-size: 11px;
-    padding-bottom:15px;
+    padding-bottom: 15px;
 }
 
 
-
+/***** this media querie is used to avoid the <dd> to wrap under the <dt> in screens smallers than 768px ****/
 @media (min-width: 310px) {
     .dl-horizontal dt {
         float: left;
@@ -639,16 +562,13 @@ nav ul li {
         white-space: nowrap;
     }
 
-
     .dl-horizontal dd {
         margin-left: 0px;
     }
 }
 
-
- 
 @media (min-width: 768px) {
-   .footer h5 {
+    .footer h5 {
         font-size: 20px;
     }
     .dl-horizontal {
@@ -660,11 +580,12 @@ nav ul li {
 }
 
 @media (min-width: 992px) {
-     .dl-horizontal {
+    .dl-horizontal {
         font-size: 16px;
+    }
 }
-}
-/*************Social media***************/
+
+/*****  Social media*  *****/
 
 .wrapper-footer-social {
     float: right;
@@ -672,17 +593,13 @@ nav ul li {
 
 .bg-social {
     padding-right: 20px;
- padding-top: 11px;
+    padding-top: 11px;
     padding-bottom: 5px;
 }
-
 
 .social-media-area {
     min-width: 145px;
 }
-
-
-
 
 .bg-social-icon {
     display: block;
@@ -691,13 +608,12 @@ nav ul li {
     width: 35px;
     height: 35px;
     background-color: #516b57;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-
 
 .bg-social-icon:hover {
     background-color: #3b4c3f;
@@ -709,19 +625,17 @@ nav ul li {
     position: absolute;
     line-height: 35px;
     /*this way it is center vertically*/
-   left: 7px;
+    left: 7px;
     color: #fff;
 }
 
-
-
 .bg-social-icon .fa-facebook {
-
     left: 10px;
 }
 
 
-/********************   MODAL   ******************/
+
+/*******************************   MODAL Subscribe  **********************************/
 
 .modal-content {
     background-color: #eeeeee;
@@ -731,12 +645,28 @@ nav ul li {
     font-family: 'Bangers', sans-serif;
     letter-spacing: 2px;
     font-size: 24px;
-
 }
 
-.modal-footer .btn-save {
+.modal-body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal-footer .btn-signin {
     background-color: #de8e15;
     color: #fff;
+}
+
+.modal-footer .btn-signin:hover {
+    background-color: #eba100;
+    color: #fff;
+}
+
+.modal-footer .btn-reset:hover,
+.modal-footer .btn-reset:focus {
+    background-color: #eeeeee;
+    color: #000000;
+    border-color: transparent;
 
 }
 
@@ -744,7 +674,6 @@ nav ul li {
 .wrapper-check {
     padding-top: 10px;
 }
-
 
 .form-control {
     margin: 0 auto;
@@ -761,12 +690,10 @@ nav ul li {
     width: 80%;
 }
 
-
 .modal-header,
 .modal-footer {
     border: 0px;
     text-align: center;
-
 }
 
 .modal-footer {
@@ -782,11 +709,6 @@ nav ul li {
     font-size: 18px;
 }
 
-
-
-
-
-
 .header-content {
     position: relative;
     top: 0px;
@@ -796,7 +718,6 @@ nav ul li {
     overflow: visible;
     z-index: 2;
 }
-
 
 .bg-section {
     position: absolute;
@@ -817,35 +738,9 @@ nav ul li {
 }
 
 
+/******************************************************************** theband.html ********************************************************/
 
-
-/*****section styled*******/
-
-.bandimage,
-.bandimage2 {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-
-.bandimage img,
-.bandimage2 img {
-    width: 250px;
-}
-
-
-
-.textband {
-    /* margin-top: 35px;*/
-}
-
-.wrapper-section {
-    margin: 60px 40px;
-}
-
-
-
-
+/**************** History of the band **************************/
 
 .page-title {
     font-family: "bangers", sans-serif;
@@ -857,19 +752,16 @@ nav ul li {
     letter-spacing: 1px;
 }
 
-
-
-.page-subtitle {
-    font-family: "Bangers", sans-serif;
-    margin-bottom: 35px;
-    margin-left: 16px;
-    font-size: 32px;
-    color: #555555;
+.bandimage,
+.bandimage2 {
     text-align: center;
-
-
+    margin-bottom: 35px;
 }
 
+.bandimage img,
+.bandimage2 img {
+    width: 250px;
+}
 
 
 .band-img-text-row {
@@ -877,14 +769,11 @@ nav ul li {
     margin: 0;
 }
 
-
-
 .textband {
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
 
-
-
+/********************* members *********************************/
 
 .member-image img {
     box-shadow: 3px 2px 5px 1px grey;
@@ -894,16 +783,10 @@ nav ul li {
     margin-bottom: 25px;
 }
 
-
-
 .member-text p {
 
     margin-bottom: 10px;
 }
-
-
-
-
 
 .member-info div div h3 {
     margin-bottom: 20px;
@@ -920,61 +803,21 @@ nav ul li {
 }
 
 
-
-
-@media (min-width: 768px) {
-
-    /*.wrapper-section {
-        margin: 60px 25px 60px 40px;
-    }*/
-    .bandimage {
-        float: right;
-        margin: 0px 0px 40px 80px;
-    }
-
-    .bandimage2 {
-        float: left;
-        margin: 0px 80px 40px 0px;
-
-    }
-
-    .bandimage img {
-        width: 400px;
-    }
-
-    .bandimage2 img {
-        width: 500px;
-    }
-
-
-    .member-info {
-        padding: 0px 60px 40px 60px;
-    }
-
-
-}
-
-
-
-
-
-
-/************************* discography********************************/
+/*********************discography*******************************/
 
 .disco-wrapper {
     width: 40%;
     margin: 0 auto;
     padding-left: 60px;
     border-left: 2px solid black;
-}
+   margin-top: 25px;
 
+}
 
 .discography {
     position: relative;
     width: 100%;
     margin-top: 15px;
-
-
 }
 
 .timeline {
@@ -986,10 +829,6 @@ nav ul li {
     padding-bottom: 50px;
     font-size: 18px
 }
-
-
-
-
 
 .discography::after {
     position: absolute;
@@ -1003,6 +842,34 @@ nav ul li {
     padding: 2px 25px;
     border: 1px solid #0c1d47;
     font-size: 18px
+}
+
+
+/********************** media queries the theband.html **********/
+
+@media (min-width: 768px) {
+
+    .bandimage {
+        float: right;
+        margin: 0px 0px 40px 80px;
+    }
+
+    .bandimage2 {
+        float: left;
+        margin: 0px 80px 40px 0px;
+    }
+
+    .bandimage img {
+        width: 400px;
+    }
+
+    .bandimage2 img {
+        width: 500px;
+    }
+
+    .member-info {
+        padding: 0px 60px 40px 60px;
+    }
 }
 
 
@@ -1020,19 +887,14 @@ nav ul li {
 }
 
 
-/******************************************* listen.html *********************************************/
+/************************************************************************** listen.html ***************************************************/
+
+.music-column {
+    padding: 25px 20px;
+}
 
 .wrapper-albums {
     padding: 0px 90px;
-}
-
-.bg-section-listen {
-    background-color: #eeeeee;
-}
-
-.music-column {
-
-    padding: 25px 20px;
 }
 
 .wrapper-player {
@@ -1042,30 +904,16 @@ nav ul li {
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 .album {
     float: none;
     margin: 0 auto;
     position: relative;
-
-
     background-image: url("../images/Vynil.png");
-    /* The image used */
-    /* Used if the image is unavailable */
     height: 250px;
-    /* You must set a specified height */
     width: 250px;
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
-    /* Do not repeat the image */
     background-size: cover;
-    /* Resize the background image to cover the entire container */
 }
 
 .album .img-circle {
@@ -1073,62 +921,60 @@ nav ul li {
     width: 150px;
     height: 150px;
     padding: 20px;
-    position: absolute;
     top: 20%;
     left: 20%;
     box-shadow: 1px 1px 10px 5px white inset;
-
 }
 
 
 .album :hover {
-    animation: rotate 2s infinite linear;
-}
+    -webkit-animation: rotate 2s infinite linear;
+	-moz-animation: rotate 2s infinite linear;
+	-o-animation: rotate 2s infinite linear;
+	-ms-animation: rotate 2s infinite linear;
+	animation: rotate 2s infinite linear; 
+ }
 
-@keyframes rotate {
-    0% {
+
+
+@-webkit-keyframes rotate {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }
 
-/*
-.album {
-    margin: 0 auto;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: black;
-
-}*/
-
-/*
-.imgcover{
- position:relative;
-   top: 50%;
-  height: 100px;
-  margin-top: -50px;
+@-moz-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 audio {
     width: 100%;
     margin-top: 20px;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px #777777;
-
 }
-
-
 
 .audio-mp3 {
     margin: 0 auto;
 }
-
 
 .title-song,
 .title-album {
@@ -1149,9 +995,7 @@ iframe {
     border-radius: 25px;
     background-image: linear-gradient(to bottom right, darkgrey, #fafafa);
     box-shadow: 1px 1px 1px 1px #777777;
-
 }
-
 
 .follow-spotify {
 
@@ -1159,10 +1003,6 @@ iframe {
     margin: 0 auto;
     padding: 0px
 }
-
-
-
-
 
 .buy-download-share {
     text-align: center;
@@ -1176,14 +1016,10 @@ iframe {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-
 }
 
-
 .buy-download-share a i:hover {
-
     color: #ff7800;
-
 }
 
 .lyrics {
@@ -1201,7 +1037,6 @@ iframe {
 .share-buy a i {
     font-size: 35px;
     letter-spacing: 30px;
-
 }
 
 .wrapper-song {
@@ -1212,38 +1047,20 @@ iframe {
     vertical-align: middle;
 }
 
-
 .cover div {
 
     width: 80px;
     height: 80px;
-
-
 }
 
-/*
-.cover img:hover {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: rotate(0) translate(-50%, -50%);
-    transform: rotate(0) translate(-50%, -50%);
-    -webkit-animation: spin 4s linear infinite paused;
-    animation: spin 4s linear infinite;
-}
-*/
-
-.header-listen{
+.header-listen {
     font-family: "Cuprum", sans-serif;
     font-weight: 700;
     font-size: 18px;
 }
 
 
+/*************************************media queries*******************/
 
 @media (min-width: 768px) {
 
@@ -1255,7 +1072,6 @@ iframe {
         overflow-y: scroll;
         overflow-x: hidden;
     }
-
     .classics {
         position: absolute;
         top: 0px;
@@ -1263,20 +1079,11 @@ iframe {
         right: 0px;
         overflow-y: scroll;
         overflow-x: hidden;
-
     }
 }
 
 
-/************************************************** contact.html *********************************/
-
-.bg-section-contact {
-    background-color: #eeeeee;
-}
-
-
-
-
+/************************************************************************************ contact.html ***********************************************/
 
 .contact-form-wrapper {
     padding: 50px 40px 100px 40px;
@@ -1298,7 +1105,6 @@ iframe {
 .date,
 .time {
     margin-bottom: 15px;
-
 }
 
 .form-horizontal .col-sm-10,
@@ -1309,9 +1115,6 @@ iframe {
 .form-horizontal label {
     padding-left: 0px;
 }
-
-
-
 
 .fa-quote-left {
     font-size: 20px;
@@ -1339,29 +1142,44 @@ blockquote p:last-child {
     width: 200px;
     margin: 0px auto;
     white-space: nowrap;
-
 }
 
-.wrapper-buttons .btn-default {
+.btn-reset {
+    background-color: #fffff;
+    color: #000000;
+    box-shadow: 1px 1px 1px 1px #555555;
+    margin-right: 20px;
+}
+
+
+.wrapper-buttons .btn-reset,
+.wrapper-buttons .btn-signin {
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
 
-.wrapper-buttons .btn-default:hover,
-.wrapper-buttons .btn-default:focus {
-    background-color: #cec8c8;
+.wrapper-buttons .btn-reset:hover,
+.wrapper-buttons .btn-reset:focus {
+    background-color: #eeeeee;
+    color: #000000;
+    border-color: transparent;
+
+}
+
+.wrapper-buttons .btn-signin:hover,
+.wrapper-buttons .btn-signin:focus {
+    background-color: #eba100;
     color: #ffffff;
+    border-color: transparent;
+
 }
 
-.btn-reset {
-    background-color: #bcbcbc;
-    color: white;
-    box-shadow: 1px 1px 1px 1px #555555;
-    margin-right: 20px;
-}
 
+
+
+/**************** media queries *********************************/
 
 @media (min-width: 768px) {
     .form-horizontal .control-label {
@@ -1376,22 +1194,23 @@ blockquote p:last-child {
         padding: 0px 100px 0px 40px;
     }
 
-
     .date {
 
         width: 120px;
         padding-left: 15px;
         float: left;
-
     }
-
-
 
     .form-horizontal .col-sm-10,
     .form-horizontal .col-xs-6 {
         padding-left: 0px;
     }
+}
 
+@media (min-width: 992px) {
+    .control-label-time {
+        padding-left: 50px !important;
+    }
 }
 
 
@@ -1399,23 +1218,12 @@ blockquote p:last-child {
     .contact-form-wrapper {
         padding: 0px 50px 90px 50px;
     }
-    .control-label-time {
-        padding-left: 50px !important;
-    }
 
-
-}
-
-@media (min-width: 992px) {
-    .control-label-time {
-        padding-left: 50px !important;
-    }
-
+   
 }
 
 
-
-/*********************************** NEWS *************************************/
+/************************************************************ news.html *************************************************************************/
 
 /***** I watched a video about responsive iframes in youtube "https://www.youtube.com/watch?v=X4t0JxiBeO0"*****/
 
@@ -1425,8 +1233,6 @@ blockquote p:last-child {
     padding-bottom: 56.25%;
     position: relative;
 }
-
-
 
 .news-video iframe {
     position: absolute;
@@ -1441,12 +1247,9 @@ blockquote p:last-child {
     -o-transition: all .3s ease-in-out;
 }
 
-
-
 .news-video iframe:hover {
     box-shadow: 2px 2px 2px 2px #34a271;
 }
-
 
 .page-subtitle {
     margin-left: 0px;
@@ -1455,8 +1258,6 @@ blockquote p:last-child {
 .videos-wrapper {
     padding-left: 8%;
     padding-right: 8%;
-
-    
 }
 
 .video-block h3 {
@@ -1467,16 +1268,12 @@ blockquote p:last-child {
     margin-top: 120px;
 }
 
-
 @media (min-width: 992px) {
-   .videos-wrapper {
-    padding-left: 180px;
-    padding-right: 0px;
-
+    .videos-wrapper {
+        padding-left: 180px;
+        padding-right: 0px;
+    }
 }
-}
-
-
 
 ul li {
     list-style: none;
@@ -1484,7 +1281,6 @@ ul li {
 
 .bg-concerts {
     padding: 0px 50px 0px 40px;
-
 }
 
 .concert-list {
@@ -1506,34 +1302,27 @@ ul li {
     margin: 20px 0px 20px 0px;
 }
 
-
 .bg-concerts .col-xs-5,
 .bg-concerts .col-xs-7 {
     margin: 0px;
     padding: 0px;
-
 }
 
 .bg-concerts .col-xs-5 {
     text-align: right;
-
 }
-
 
 .concert-buy h3 i {
     font-size: 20px;
-
 }
 
 .concert-buy a .btn {
     font-size: 20px;
     padding-right: 5px;
-
 }
 
 .btn-success {
     margin-top: 20px;
-
     margin-bottom: 20px;
     width: 100px;
     border-radius: 30px;
@@ -1541,13 +1330,11 @@ ul li {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-
 }
 
 .progress {
     background-color: #ffffff;
     height: 30px;
-
 }
 
 .progress-bar {
@@ -1555,36 +1342,51 @@ ul li {
     font-weight: bolder;
     color: #242c51;
     padding-top: 5px;
-
 }
+
 
 
 
 .label-warning {
+    -webkit-animation: warning 1.5s ease-in-out infinite;
+    -moz-animation: warning 1.5s ease-in-out infinite;
+    -o-animation: warning 1.5s ease-in-out infinite;
+    -ms-animation: warning 1.5s ease-in-out infinite;
     animation: warning 1.5s ease-in-out infinite;
 }
 
-@keyframes warning {
+@-webkit-keyframes warning {
     from {
-        color: transparent
+        color: transparent;
     }
     to {
-        color: #ffffff
+        color: #ffffff;
     }
+}
 
+@-moz-keyframes warning {
+    from {
+        color: transparent;
+    }
+    to {
+        color: #ffffff;
+    }
 }
 
 
-
-.modal-body {
-    width: 80%;
-    margin: 0 auto;
+@keyframes warning {
+    from {
+        color: transparent;
+    }
+    to {
+        color: #ffffff;
+    }
 }
+
 
 
 #myModal2 p {
     margin-bottom: 30px;
-
 }
 
 #myModal2 p .text-muted {
