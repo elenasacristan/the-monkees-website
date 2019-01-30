@@ -1417,7 +1417,7 @@ blockquote p:last-child {
 
 /*********************************** NEWS *************************************/
 
-/***** I watch a video about responsive iframes in youtube "https://www.youtube.com/watch?v=X4t0JxiBeO0"*****/
+/***** I watched a video about responsive iframes in youtube "https://www.youtube.com/watch?v=X4t0JxiBeO0"*****/
 
 .news-video {
     width: 100%;
@@ -1425,7 +1425,6 @@ blockquote p:last-child {
     padding-bottom: 56.25%;
     position: relative;
 }
-
 
 
 
@@ -1454,7 +1453,10 @@ blockquote p:last-child {
 }
 
 .videos-wrapper {
-    padding-left: 120px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    
 }
 
 .video-block h3 {
@@ -1466,6 +1468,13 @@ blockquote p:last-child {
 }
 
 
+@media (min-width: 992px) {
+   .videos-wrapper {
+    padding-left: 180px;
+    padding-right: 0px;
+
+}
+}
 
 
 
