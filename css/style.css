@@ -549,6 +549,12 @@ nav ul li {
     padding-bottom: 15px;
 }
 
+dt, dd{
+    margin-bottom: 3px;
+}
+
+
+
 
 /***** this media querie is used to avoid the <dd> to wrap under the <dt> in screens smallers than 768px ****/
 @media (min-width: 310px) {
@@ -965,16 +971,23 @@ nav ul li {
 }
 
 
+.audio-mp3 {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+    
+}
+
+
+
 audio {
-    width: 100%;
+    width: 75%;
     margin-top: 20px;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px #777777;
 }
 
-.audio-mp3 {
-    margin: 0 auto;
-}
+
 
 .title-song,
 .title-album {
