@@ -542,36 +542,55 @@ nav ul li {
 
 /*****  contact footer  *****/
 
-.footer h5 {
-    margin-top: 3px;
+.footer .h5footer {
+    margin-top: 0px;
     font-family: 'Bangers', sans-serif;
-    margin-bottom: 8px;
-    letter-spacing: 3px;
+    padding-bottom: 2px;
+    letter-spacing: 1px;
     font-size: 15px
 }
 
-.bg-contactus {
-    padding-left: 30px;
-    padding-top: 11px;
-    padding-bottom: 5px;
+.bg-all-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bg-social {
+    margin-left: auto;
+    /*this will push the divs to the side of the footer*/
 }
 
 .dl-horizontal {
     font-size: 11px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
 }
 
+.dl-horizontal,
 dt,
 dd {
-    margin-bottom: 3px;
+    margin: 0px;
+    padding: 0px;
 }
 
+.bg-contactus {
+    padding-left: 10px;
+}
 
+.bg-social {
+    padding-right: 10px;
+}
 
 
 /***** this media querie is used to avoid the <dd> to wrap under the <dt> in screens smallers than 768px ****/
 
 @media (min-width: 310px) {
+
+    .dl-horizontal {
+        width: 160px;
+    }
+
     .dl-horizontal dt {
         float: left;
         width: 60px;
@@ -588,38 +607,37 @@ dd {
 }
 
 @media (min-width: 768px) {
-    .footer h5 {
+
+    .dl-horizontal {
+        width: 200px;
+    }
+
+    .dl-horizontal dt {
+        width: 80px;
+    }
+
+    .footer .h5footer {
         font-size: 20px;
     }
     .dl-horizontal {
-        font-size: 14px;
+        font-size: 13px;
     }
     .dl-horizontal dt {
         width: 80px;
     }
-}
-
-@media (min-width: 992px) {
-    .dl-horizontal {
-        font-size: 16px;
+    .bg-contactus {
+        padding-left: 40px;
+    }
+    .bg-social {
+        padding-right: 40px;
     }
 }
 
-/*****  Social media*  *****/
-
-.wrapper-footer-social {
-    float: right;
-}
 
 .bg-social {
-    padding-right: 20px;
-    padding-top: 11px;
-    padding-bottom: 5px;
+    white-space: nowrap;
 }
 
-.social-media-area {
-    min-width: 145px;
-}
 
 .bg-social-icon {
     display: block;
@@ -628,7 +646,6 @@ dd {
     width: 35px;
     height: 35px;
     background-color: #516b57;
-    margin-bottom: 10px;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -914,7 +931,7 @@ dd {
 }
 
 .wrapper-albums {
-    padding: 0px 90px;
+    padding: 0px 20px;
 }
 
 .wrapper-player {
@@ -1089,6 +1106,9 @@ iframe {
 /*************************************media queries*******************/
 
 @media (min-width: 768px) {
+    .wrapper-albums {
+        padding: 0px 90px;
+    }
 
     .newmusic {
         position: absolute;
