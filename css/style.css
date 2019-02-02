@@ -41,6 +41,15 @@ progress,
     letter-spacing: 1px;
 }
 
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
 header {
     width: 100%;
 }
@@ -358,26 +367,38 @@ nav ul li {
 
 /************ btn-signin is from the contact.html ***********/
 
-.btn-success2,
+
+
+.nav .nav-item .btn-success2 {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border: none;
+
+
+}
+
+.nav .nav-item .btn-success2:hover,
+.nav .nav-item .btn-success2:focus,
+.nav .nav-item .btn-success2:active {
+    color: #0b1752;
+    border-color: transparent;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+
 .btn-signin {
     color: #fff;
-    background-color: #de8e15;
+    background-color: #ff8707;
     border-color: transparent;
 }
 
 
-.nav>li>a:hover {
-    color: #fff;
-    background-color: #de8e15;
-    border-color: transparent;
-}
 
-.btn-success2.active,
-.btn-success2:active,
-.open>.dropdown-toggle.btn-success2 {
-    color: #fff;
-    border: none;
-}
 
 .navbar-collapse {
     position: relative;
@@ -405,16 +426,8 @@ nav ul li {
         margin-top: 0px;
     }
 
-    .navbar-nav>.nav-item-menu>a {
+    .navbar-nav>.nav-item-menu>button {
         padding-top: 15px;
-    }
-
-    .navbar-nav>.subscribe>a {
-        padding-top: 10px;
-    }
-
-    .navbar-default .navbar-nav>li>a {
-        font-size: 20px;
     }
 
     .nav-item {
@@ -424,49 +437,45 @@ nav ul li {
         line-height: 90px;
     }
 
-    .nav>li>a {
+    .nav>li>button {
         display: inline-block;
     }
 
-    .navbar-default .navbar-nav>.active>a,
-    .navbar-default .navbar-nav>.active>a:focus,
-    .navbar-default .navbar-nav>.active>a:hover {
-        background-color: transparent;
-        color: #0b1752;
-    }
 
-    .navbar-default .navbar-nav>li>a {
-        color: #fff;
+    .btn-signin {
+        background-color: #ff8a00;
+        box-shadow: 1px 2px 4px 0px #0b1752;
         transition: all .3s ease-in-out;
         -webkit-transition: all .3s ease-in-out;
         -moz-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
     }
 
-    .navbar-default .navbar-nav>li>a:focus,
-    .navbar-default .navbar-nav>li>a:hover {
-        color: #0b1752;
-        background-color: transparent;
-    }
-
-    .navbar-nav>li>a {
-        height: 90px;
-    }
-
-    .collapse ul .subscribe .btn {
-        padding-top: 10px;
+      .nav .nav-item .btn-success2 {
+         padding-top: 12px;
         height: 45px;
         width: 125px;
         border-radius: 20px;
         margin-bottom: 20px;
-    }
-
-    .navbar-default .navbar-nav>.subscribe>a:focus,
-    .navbar-default .navbar-nav>.subscribe>a:hover {
+        background-color: #ff8a00;
         color: #fff;
-        background-color: #ffae00;
+        box-shadow: 1px 2px 4px 0px #0b1752;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+
     }
 
+    .nav .nav-item .btn-success2:focus,
+    .nav .nav-item .btn-success2:hover,
+    .nav .nav-item .btn-success2:active{
+        color: #fff;
+        background-color: #ffaa46;
+         box-shadow: 1px 2px 4px 0px #0b1752;
+    }
+
+   
     nav ul li i {
         display: block;
         padding-bottom: 10px
@@ -481,71 +490,18 @@ nav ul li {
         border: none;
     }
 
-    .btn-success2,
-    .btn-signin {
-        color: #fff;
-        background-color: #ff8a00;
-        box-shadow: 1px 2px 4px 0px #0b1752;
-        transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-    }
-
-    .btn-success2.active,
-    .btn-success2:active,
-    .open>.dropdown-toggle.btn-success2,
-    .navbar-default .navbar-nav>.subscribe>a:focus,
-    .navbar-default .navbar-nav>.subscribe>a:hover
-        {
-        color: #fff;
-        background-color: #ffae00;
-        box-shadow: 1px 2px 4px 0px #0b1752;
-    }
-
-    .btn-success2.focus,
-    .btn-success2:focus {
-        border-color: transparent;
-    }
 }
 
 
 
 @media (min-width: 992px) {
-    
-.collapse ul .subscribe .btn {
-       
+
+    .collapse ul .subscribe .btn {
         width: 80%;
-       
     }
-
 }
 
 
-
-
-
-
-
-.btn-success2.active.focus,
-.btn-success2.active:focus,
-.btn-success2.active:hover,
-.btn-success2:active.focus,
-.btn-success2:active:focus,
-.btn-success2:active:hover,
-.open>.dropdown-toggle.btn-success2.focus,
-.open>.dropdown-toggle.btn-success2:focus,
-.open>.dropdown-toggle.btn-success2:hover {
-    color: #fff;
-    background-color: #398439;
-    border: none;
-}
-
-
-.btn-success2.focus,
-.btn-success2:focus {
-    border-color: transparent;
-}
 
 /******************************** FOOTER  ************************************/
 
@@ -887,7 +843,7 @@ dd {
     position: absolute;
     top: 0px;
     left: -105px;
-    content: attr(year);
+    content: attr(data-year);
     display: block;
     background-color: #0c1d47;
     color: #fff;
@@ -941,10 +897,6 @@ dd {
 
 
 /************************************************************************** listen.html ***************************************************/
-
-.music-column {
-    padding: 25px 20px;
-}
 
 .wrapper-albums {
     padding: 0px 20px;
@@ -1047,6 +999,33 @@ audio {
 
 iframe {
     border-style: outset;
+}
+
+
+
+.iframeframe {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.follow-spotify {
+    width: 150px;
+
+}
+
+.follow-spotify iframe {
+    margin: 0 auto;
+
+}
+
+.iframeframe iframe {
+    width: 100%;
+}
+
+
+.newmusic{
+    margin-bottom: 60px;
 }
 
 .new-album .iframeframe {
@@ -1207,7 +1186,7 @@ blockquote p:last-child {
 }
 
 .btn-reset {
-    background-color: #fffff;
+    background-color: #ffffff;
     color: #000000;
     box-shadow: 1px 1px 1px 1px #555555;
     margin-right: 20px;
@@ -1378,7 +1357,7 @@ ul li {
     font-size: 20px;
 }
 
-.concert-buy a .btn {
+.concert-buy button .btn {
     font-size: 20px;
     padding-right: 5px;
 }

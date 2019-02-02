@@ -11,13 +11,10 @@
     <!--link to bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
 
-    <!--link to hover effects-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-
     <!--link to font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" />
 
-    <!-- My style sheet to update the original template-->
+    <!-- My style sheete-->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 
     <title>The Monkees website</title>
@@ -33,14 +30,14 @@
         <div class="wrapper-header">
 
             <div class="row">
-                <!----------LOGO------------->
+                <!--LOGO-->
 
                 <div class="col-xs-6 col-sm-2 logo">
-                    <a href="index.html"><img src="images/logo.png" alt="Monkees logo"></img></a>
+                    <a href="index.html"><img src="images/logo.png" alt="Monkees logo"></a>
                 </div>
 
 
-                <!----------NAV------------->
+                <!--NAV-->
 
 
                 <div class="col-xs-6 col-sm-10 bg-nav">
@@ -63,7 +60,7 @@
                                 <li class="nav-item nav-item-menu"><a href="news.html"><i class="fa fa-newspaper-o hidden-xs" aria-hidden="true"></i><span class="page">News</span></a></li>
                                 <li class="nav-item nav-item-menu"><a href="listen.html"><i class="fa fa-music hidden-xs" aria-hidden="true"></i><span class="page">Listen</span></a></li>
                                 <li class="nav-item nav-item-menu active"><a href="contact.html"><i class="fa fa-comments hidden-xs" aria-hidden="true"></i><span class="page">Contact</span></a></li>
-                                <li class="nav-item subscribe"><a href="#" class="btn btn-success2" type="submit" data-toggle="modal" data-target="#myModal">Subscribe</a></li>
+                                <li class="nav-item subscribe"><button class="btn btn-success2" data-toggle="modal" data-target="#myModal">Subscribe</button></li>
                             </ul>
 
 
@@ -109,7 +106,7 @@
                             <label for="event" class="col-sm-2 control-label hidden-xs">Event:</label>
                             <div class="col-sm-10">
                                 <select class="form-control" name="event" id="event" required>
-                                    <option disabled selected>Select the type of event</option>
+                                    <option disabled selected value="">Select the type of event</option>
                                     <option>Weeding</option>
                                     <option>Birthday</option>
                                     <option>Corporate Event</option>
@@ -123,16 +120,16 @@
 
 
                         <div class="form-group">
-                            <label for="date" class="col-sm-2 col-md-2 control-label hidden-xs">Date:</label>
+                            <label for="date1" class="col-sm-2 col-md-2 control-label hidden-xs">Date:</label>
                             <div class="col-xs-12 col-sm-6 col-md-4">
-                                <input class="form-control date" type="date" id="date" name="date">
+                                <input class="form-control date1" type="date" id="date1" name="date1">
                             </div>
 
 
                             <label for="time" class="col-sm-1 col-md-3 control-label control-label-time hidden-xs">Time:</label>
                             <div class="col-xs-12 col-sm-3  col-md-3">
                                 <select class="form-control time" name="time" id="time" required>
-                                     <option disabled selected>Select the time</option>
+                                    <option disabled selected value="">Select the time</option>
                                     <option>12:00</option>
                                     <option>14:00</option>
                                     <option>15:00</option>
@@ -233,11 +230,10 @@
                 </div>
             </div>
 
-
         </div>
     </section>
 
-   <footer class="container-fluid footer bg-all-footer">
+    <footer class="container-fluid footer bg-all-footer">
 
 
         <div class="bg-contactus">
@@ -255,15 +251,12 @@
             <h5 class="uppercase text-center h5footer">Follow us!</h5>
 
             <ul class="list-inline social-media-area">
-                <li class="social-item"><a href="https://www.facebook.com/" target="_blank"><span class="bg-social-icon"><i class="fa fa-facebook" aria-hidden="true" aria-hidden="true" aria-hidden="true"></i></span></a></li>
-                <li class="social-item"><a href="https://www.instagram.com/" target="_blank"><span class="bg-social-icon"><i class="fa fa-instagram" aria-hidden="true" aria-hidden="true" aria-hidden="true"></i></span></a></li>
-                <li class="social-item"><a href="https://www.twitter.com/" target="_blank"><span class="bg-social-icon"><i class="fa fa-twitter" aria-hidden="true" aria-hidden="true" aria-hidden="true"></i></span></a></li>
+                <li class="social-item"><a href="https://www.facebook.com/" target="_blank"><span class="bg-social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></span></a></li>
+                <li class="social-item"><a href="https://www.instagram.com/" target="_blank"><span class="bg-social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></a></li>
+                <li class="social-item"><a href="https://www.twitter.com/" target="_blank"><span class="bg-social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
             </ul>
         </div>
     </footer>
-
-
-
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -281,12 +274,6 @@
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" class="form-control" id="InputPassword1" placeholder="type a password" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password2" class="form-control" id="InputPassword2" placeholder="type your password again" required>
                         </div>
                         <div class="wrapper-check">
                             <div class="checkbox newsletter">
@@ -314,26 +301,10 @@
 
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== 
-    
-    JQuery-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!--Bootstrap (JS file)-->
+    <!--  JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bootstrap-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
-    <!-- Placed at the end of the document so the pages load faster
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')    </script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    /*
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! 
-    <script src="js/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>*/ -->
 
 
 </body>
