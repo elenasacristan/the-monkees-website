@@ -1009,9 +1009,12 @@ iframe {
 
 }
 
-.follow-spotify {
-    width: 150px;
 
+.follow-spotify {
+
+    width: 150px;
+    margin: 0 auto;
+    padding: 0px
 }
 
 .follow-spotify iframe {
@@ -1035,12 +1038,7 @@ iframe {
     box-shadow: 1px 1px 1px 1px #777777;
 }
 
-.follow-spotify {
 
-    width: 30%;
-    margin: 0 auto;
-    padding: 0px
-}
 
 .buy-download-share {
     text-align: center;
