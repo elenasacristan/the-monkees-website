@@ -1115,10 +1115,11 @@ iframe {
     width: 100%;
 }
 
-.date,
+.date1,
 .time {
     margin-bottom: 15px;
 }
+
 
 .form-horizontal .col-sm-10,
 .form-horizontal .col-xs-6 {
