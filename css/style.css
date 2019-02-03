@@ -367,8 +367,6 @@ nav ul li {
 
 /************ btn-signin is from the contact.html ***********/
 
-
-
 .nav .nav-item .btn-success2 {
     color: #fff;
     font-size: 18px;
@@ -451,8 +449,8 @@ nav ul li {
         -o-transition: all .3s ease-in-out;
     }
 
-      .nav .nav-item .btn-success2 {
-         padding-top: 12px;
+    .nav .nav-item .btn-success2 {
+        padding-top: 12px;
         height: 45px;
         width: 125px;
         border-radius: 20px;
@@ -469,13 +467,13 @@ nav ul li {
 
     .nav .nav-item .btn-success2:focus,
     .nav .nav-item .btn-success2:hover,
-    .nav .nav-item .btn-success2:active{
+    .nav .nav-item .btn-success2:active {
         color: #fff;
         background-color: #ffaa46;
-         box-shadow: 1px 2px 4px 0px #0b1752;
+        box-shadow: 1px 2px 4px 0px #0b1752;
     }
 
-   
+
     nav ul li i {
         display: block;
         padding-bottom: 10px
@@ -1027,7 +1025,7 @@ iframe {
 }
 
 
-.newmusic{
+.newmusic {
     margin-bottom: 60px;
 }
 
@@ -1281,6 +1279,11 @@ blockquote p:last-child {
 
 .video2 {
     margin-top: 120px;
+}
+
+.iframeframnews {
+    width: 100%;
+    margin: 0 auto;
 }
 
 @media (min-width: 992px) {
