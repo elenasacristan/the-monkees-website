@@ -911,21 +911,21 @@ dd {
     float: none;
     margin: 0 auto;
     position: relative;
-    background-image: url("../images/Vynil.png");
-    height: 250px;
-    width: 250px;
+    background-image: url("../images/vinyl2.png");
+    height: 320px;
+    width: 320px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .album .img-circle {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 165px;
+    height: 165px;
     padding: 20px;
-    top: 20%;
-    left: 20%;
+    top: 24%;
+    left: 15%;
     box-shadow: 1px 1px 10px 5px white inset;
 }
 
