@@ -145,7 +145,7 @@ This page is aimed for event organisers who want to contact the band to play in 
 
 - **Rotation when play is pressed:** Once I learn JavaScript I would like to rotate the vinyls when the play icon is pressed and stop them when paused is pressed (right now they only rotate if you hover over the small image).
 
-- **Audio:**When the play control in the audio element is pressed make sure previous audio elements stop playing and the same for the iframes from Spotify and YouTube.
+- **Audio:** When the play control in the audio element is pressed make sure previous audio elements stop playing and the same for the iframes from Spotify and YouTube.
 
 - **Start rating:** I would like to add a start rating scale under the audio elements so when the users listen to the songs they can give them a rating.
 
