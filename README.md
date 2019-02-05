@@ -9,7 +9,9 @@ Click [here](https://elenasacristan.github.io/the-monkees-website/) to see the w
 
 This website is targeting current and potential fans from the Monkees band. This website is also used to showcase their music so event organisers can book the band to perform in events.
 
-In the link below you can see the mockups that I draw using the mockup tool “Pencil”:
+### mockups:
+
+In the links below you can see the mockups that I draw using the mockup tool “Pencil”:
 
 - [index.html mockup](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/index.png)
 - [the band-part1.html mockup](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/theband1.png)
@@ -19,7 +21,7 @@ In the link below you can see the mockups that I draw using the mockup tool “P
 - [listen.html mockup](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/listen.png)
 - [contact.html mockup](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/contac.png)
 
-*Note that the final design has changed from the original design in the mockups. The reason why it has changed is because  I learnt new things while working on the design and I thought that they would look nicer than the initial idea in the mockups.*
+**Note that the final design has changed from the original design in the mockups. The reason why it has changed is because  I learnt new things while working on the design and I thought that they would look nicer than the initial idea in the mockups.*
 
 ### User stories:
 
@@ -40,30 +42,30 @@ In the link below you can see the mockups that I draw using the mockup tool “P
 
 ### In all pages
 
-**GoogleFonts:** They are used to customise the website and create a style that matches with the Monkees style. I have used Bangers and Cuprum and I have added the following code in the Style.css file.
+- **GoogleFonts:** They are used to customise the website and create a style that matches with the Monkees style. I have used Bangers and Cuprum and I have added the following code in the Style.css file.
 
-@import url('https://fonts.googleapis.com/css?family=Bangers|Cuprum:400,700');
+  `@import url('https://fonts.googleapis.com/css?family=Bangers|Cuprum:400,700');`
 
 ### index.html
 
-**Carousel:** Allows users to see some of the best pictures of the Monkees rotating automatically. They can click on the arrows to go to the next or previous picture faster but if they don’t click  on the arrows the pictures will rotate automatically.
+- **Carousel:** Allows users to see some of the best pictures of the Monkees rotating automatically. They can click on the arrows to go to the next or previous picture faster but if they don’t click  on the arrows the pictures will rotate automatically.
 The carousel feature has been taken from bootstrap and then the css has been modified to suit the needs of the website.
 
-**Redirects:** By clicking on the Logo or by clicking on the word “Enter” the users get redirected to the page “theband.html”.
+- **Redirects:** By clicking on the Logo or by clicking on the word “Enter” the users get redirected to the page “theband.html”.
 
 ### theband.html, news.html, listen.html and contact.html
 #### Navigation-bar
 It will allow users to navigate to other pages of the website by clicking on the navigation items. I’ve used the navigation element from bootstrap, removed the navigation items that I didn’t need and update the style with CSS.
 
-The navigation bar will be the same for the four pages with the link to the current page highlighted in dark blue.
+  The navigation bar will be the same for the four pages with the link to the current page highlighted in dark blue.
 
-**Logo:** The logo in the navigation-bar will redirect the users to the page “index.html”.
+- **Logo:** The logo in the navigation-bar will redirect the users to the page “index.html”.
 
-**Hamburger button:** The navigation bar will collapse for small screens. I have used the Hamburger button from Bootstrap and customise it with CSS.
+- **Hamburger button:** The navigation bar will collapse for small screens. I have used the Hamburger button from Bootstrap and customise it with CSS.
 
-**Modal:** in the navigation-bar we have the “Subscribe” button that will open a modal window to enter our contact details and subscribe to the newsletter. The modal feature has also been taken from bootstrap and the CSS styles have been updated.
+- **Modal:** in the navigation-bar we have the “Subscribe” button that will open a modal window to enter our contact details and subscribe to the newsletter. The modal feature has also been taken from bootstrap and the CSS styles have been updated.
 
-**Form:** Inside the Modal window I have added a Form (also taken from Bootstrap). 
+- **Form:** Inside the Modal window I have added a Form (also taken from Bootstrap). 
 I have removed the fields that were not needed and I have updated the CSS. I have also added the attribute “required” to make the fields compulsory and to avoid wrong emails being entered.
 
 #### Footer
@@ -71,81 +73,81 @@ In the footer the user can see the contact details email and phone (I used dummy
 The footer is the same for the four pages in order to keep the website consistent.
 The navigation bar and footer are always visible and the content is scrollable.
 
-**Social-Links:**  Allows users to follow the band on social media (Facebook, YouTube, Twitter) by clicking on the icons at the bottom of the page.
+- **Social-Links:**  Allows users to follow the band on social media (Facebook, YouTube, Twitter) by clicking on the icons at the bottom of the page.
 
-**FontAwesome:** The FontAwesome icons are used to add extra meaning in several pages (i.e. social media buttons, share button in listen.html).
+- **FontAwesome:** The FontAwesome icons are used to add extra meaning in several pages (i.e. social media buttons, share button in listen.html).
 
 ### theband.html
 The users get redirected to this page from index.html.
 This page is split in three main areas “history of the band”, “Members” and “discography” and is aimed for users that don't know much about the band or for those who want learn more about them.
 
-**History of the band:** The content is taken from Spotify and the users can continue reading on Spotify my clicking on “Read more”.
+- **History of the band:** The content is taken from Spotify and the users can continue reading on Spotify my clicking on “Read more”.
 
-**Members:** In this section you can learn about the members. The content is taken from Wikipedia and you can also read more by clicking on the links “Read more”.
+- **Members:** In this section you can learn about the members. The content is taken from Wikipedia and you can also read more by clicking on the links “Read more”.
 
-**Discography:** contains all the albums released from the beginning until now. The information comes from Wikipedia.
+- **Discography:** contains all the albums released from the beginning until now. The information comes from Wikipedia.
 
 ### news.html
 The news.html page has two sections. The first one is “Concerts coming up...” and the second “The latest”
 #### Concerts coming up...
 This section will show the list of the next 7 concerts, will display information about the amount of tickets available and it will allow the users to buy tickets online.
 
-**Progress bars:** I have used progress bars from bootstrap in order to show the tickets available for future contents.
+- **Progress bars:** I have used progress bars from bootstrap in order to show the tickets available for future contents.
 
-**Label:** I have used labels to add emphasis to the amount of tickets left. When there are less than 15% of tickets available the label will say “Hurry Up!!” and it will blink (the blink effect has been done using @keyframes), if the tickets are sold out the label will be red and will say “sold out”, if there are still plenty of tickets left then the label won't be displayed and if the tickets are not available yet the label will be blue and will say “Tickets available soon”.
+- **Label:** I have used labels to add emphasis to the amount of tickets left. When there are less than 15% of tickets available the label will say “Hurry Up!!” and it will blink (the blink effect has been done using @keyframes), if the tickets are sold out the label will be red and will say “sold out”, if there are still plenty of tickets left then the label won't be displayed and if the tickets are not available yet the label will be blue and will say “Tickets available soon”.
 
-**Keyframes:** The blinking effect in the yellow labels has been made using keyframes
+- **Keyframes:** The blinking effect in the yellow labels has been made using keyframes
 
-**Book Now buttons:** A modal containing a form will open when the user clicks on “Book Now”. In this modal the user will type name and email in order to book the tickets.  Both fields are compulsory and the email needs to be a valid email address. Then this user should receive an email with the next steps to buy the tickets online (this part is not done yet because I still need to learn how to do it).
+- **Book Now buttons:** A modal containing a form will open when the user clicks on “Book Now”. In this modal the user will type name and email in order to book the tickets.  Both fields are compulsory and the email needs to be a valid email address. Then this user should receive an email with the next steps to buy the tickets online (this part is not done yet because I still need to learn how to do it).
 
 #### The latest
 In this section the users can see videos of the latest performances by the Monkees.
 
-**Iframe:** I have used iframes to add videos from YourTube. In order make the video responsive to the size of the screen I’ve followed the instructions in the link below:
+- **Iframe:** I have used iframes to add videos from YourTube. In order make the video responsive to the size of the screen I’ve followed the instructions in the link below:
 	
-https://www.youtube.com/watch?v=X4t0JxiBeO0
+  https://www.youtube.com/watch?v=X4t0JxiBeO0
 
 ### listen.html
-I have split this version in two sections. The first section is “What's New” and the second “The Classics”.
-#### What's New:
-This section contains the play list for the most recent albums by the Monkees.
+I have split this version in two sections. The first section is “What's New!” and the second “The Classics!”.
+#### What's New!:
+This section contains the play lists for the most recent albums by the Monkees.
 
-**iframe:** I have embedded two albums from the Monkees from Spotify by copying the embedded code from the Spotity website. Then I have added a frame around it with CSS.
+- **iframe:** I have embedded two albums from the Monkees from Spotify by copying the embedded code from the Spotity website. Then I have added a frame around it with CSS.
 
-The users that are already members of Spotify will be able to listen to the full album but the users that are not Spotify members will only be able to listen a fraction of the songs.
+  The users that are already members of Spotify will be able to listen to the full album and the users that are not Spotify members will only be able to listen a fraction of the songs.
 I have also added a follow us link (embeded code taken from Spotify) so the fans can follow the Monkeys on Spotify.
 #### The Classics
 
 In this section the users can play some of the more famous songs from the Monkees.
 
-**Audio:** I have added the element audio with the controls so the users can play and pause the songs.
+- **Audio:** I have added the element audio with the controls so the users can play and pause the songs.
 
-**Keyframes:** In order to improve the user experience I have added a rotation effect on the disk images. I have downloaded a Vinyl disc image from Google and I have placed on top a picture from the Monkees (with circular shape shape). If the user hover over the picture the disc will rotate.
+- **Keyframes:** In order to improve the user experience I have added a rotation effect on the vinyl images. I have downloaded a vinyl image from Google and I have placed on top a picture from the Monkees (with circular shape shape). If the user hover over the image on the vinyl the circular image on top of the vinyil will rotate.
 
-**Download lyrics:** The users can download the lyrics in “.txt” format so they can learn and sing the songs. The lyrics have been copied from google.
+- **Download lyrics:** The users can download the lyrics in “.txt” format so they can learn and sing the songs. The lyrics have been copied from google.
 
-**Share button:** (this will be a future addition when I learn how to do it). This button will allow the users to share the classics with family and friends.
+- **Share button:** (this will be a future addition when I learn how to do it). This button will allow the users to share the classics with family and friends.
 
 ### contact.html
 This page is aimed for event organisers who want to contact the band to play in an event.
 
-**Form:** This page will have a contact form where the event organisers need to enter their contact details, details about the type of event, day, time, number of assistants and additional comments (optional).
+- **Form:** This page will have a contact form where the event organisers need to enter their contact details, details about the type of event, day, time, number of assistants and additional comments (optional).
 
-**Quotes:** The users who are planning an event can read the opinions from other people who already booked the Monkees in the past.
+- **Quotes:** The users who are planning an event can read the opinions from other people who already booked the Monkees in the past.
 
 ## Features Left to Implement
 
 - **Online payments:** At the moment the users need to enter the contact details and then they should receive and email in order to complete the payment online but it will be easier for the users if the could complete the online payment while they are in the website.
 
-- **Share button:** Once I learn how to do it I would like to allow users to share the songs in their social media website when they click on the icon “Share” (listen.html)
+- **Share button:** Once I learn how to do it I would like to allow users to share the songs on their social media websites when they click on the icon “Share” (listen.html)
 
-- **Pop-up window after the forms are filled and submitted:** I would like to display a message saying “You have been subscribed” when they fill the form and click on Subscribe. I would also like to display a message for the other two forms in the website (in the contat.html and in the news.html pages). I could have added the Modals with the messages but I still need to learn how to check if the fields have been filled before displaying the message.
+- **Pop-up window after the forms are filled and submitted:** I would like to display a message saying “You have been subscribed” when the users fills the form and click on Subscribe. I would also like to display a message for the other two forms in the website (in the contat.html and in the news.html pages). I could have added the Modals with the messages but I still need to learn how to check if the fields have been filled before displaying the message.
 
 - **Rotation when play is pressed:** Once I learn JavaScript I would like to rotate the vinyls when the play icon is pressed and stop them when paused is pressed (right now they only rotate if you hover over the small image).
 
 - **Audio:**When the play control in the audio element is pressed make sure previous audio elements stop playing and the same for the iframes from Spotify and YouTube.
 
-- **Start rating:** I would like to add a start rating scale under the images so when people listen to the song they can give them a rating.
+- **Start rating:** I would like to add a start rating scale under the audio elements so when the users listen to the songs they can give them a rating.
 
 ## Technologies Used
 
@@ -155,90 +157,120 @@ This page is aimed for event organisers who want to contact the band to play in 
 
 - **CSS3:** Is the language used to add styles to the HTML.
 
+#### Development enviroment:
+
 - **[Cloud9:](https://c9.io/ 'https://c9.io/')**
 I have used the cloud9 development environment to write the code. In cloud9 I have been able to see the changes in real time as I type the code. I have also used the terminal from cloud9 in order to use git, create my local repository and then push the repository to the GitHub (remote repository).
+
+#### Version control system:
 
 - **[Git:](https://git-scm.com/ 'https://git-scm.com/')**
 I have used the version control system Git from the cloud9 terminal in order to track changes in the website and push them to GitHub.
 
+#### Hosting service:
+
+
 - **[GitHub:](https://github.com/ 'https://github.com/')**
-I have used GitHub as the remote repository and in order to deploy the website.
+I have used GitHub Pages in order to deploy the website and it is also the remote repository where I have pushed the changes from cloud9.
 
 #### Frameworks:
 
 - **[Bootstrap:](https://getbootstrap.com/docs/3.3/,'https://getbootstrap.com/docs/3.3/')**
-https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
-I have used bootstrap in order to be able to use the grid system to structure the content in an organised and responsive way and also in order to use some of the components (carousel, navigation bar, progress bars, form, modal and typography).
+
+  The style sheet from Bootstrap is placed inside HTML <head> but before my own stylesheet so I can overwrite the styles with my own CSS code: 
+  
+  `https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css`
+
+  I have used bootstrap in order to be able to use the grid system to structure the content in an organised and responsive way and also in order to use some of the components (carousel, navigation bar, progress bars, form, modal and typography).
 
 #### Libraries:
 
+  The style sheet from FontAwesome is placed inside HTML but before my own stylesheet so I can overwrite the styles with my own CSS code:
+
 - **[FontAwesome:](https://fontawesome.com/ 'https://fontawesome.com/')**
-https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-I have used it to add icons in several places in the website to improve the user experience and to add social media links.
+
+   `https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" `
+
+  I have used it to add icons in several places in the website to improve the user experience and to add social media links.
 
 - **[Google Fonts:](https://fonts.google.com/ 'https://fonts.google.com/')**
 I’ve used the fonts from Google Fonts to style the fonts in the website.
 
 - **JavaScript from Bootstrap and JQuery**
-https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
-https://code.jquery.com/jquery-3.3.1.min.js
-I have used these two libraries because they are required for some of the bootstrap components (i.e. Modals, Carousel...). It is important to add them in the right order: first JavaSript from Bootstrap followed by jQuery. They need to be at the end of the code (just before the </body> tag).
+
+  `https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js`
+  `https://code.jquery.com/jquery-3.3.1.min.js`
+
+  I have used these two libraries because they are required for some of the bootstrap components (i.e. Modals, Carousel...). It is important to add them in the right order: first JavaSript from Bootstrap followed by jQuery. They need to be at the end of the code (just before the </body> tag).
 
 ## Testing
 
-Once I have finished coding the HTML and CSS files the first thing that I did was validate the code using https://validator.w3.org/ and https://jigsaw.w3.org/css-validator/ to validate the HTML and CSS code respectively.
+### Validation
+
+- **HTML:** I have used https://validator.w3.org/ in order to validate the HTML code.
+- **CSS:** I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code.
+
 
 After running the validation I found several errors (typos, obsolete and wrong attributes, duplicated attributes, duplicated code...) I also found many warnings but most of them were actually right code and they could be ignored.
+### Features and responsiveness testing
+  Once all the errors and some of the warnings were fixed I started testing the website page by page checking every feature in all possible screen sizes.
 
-Once all the errors and some of the warnings were fixed I started testing the website page by page checking every feature in all possible screen sizes.
+  In order to make sure I check all the features I created a spreadsheet with a check list to make sure everything gets tested. This list contains all the features for each screen size so I can check the features and website responsiveness all at once.
+  
 
-In order to make sure I check all the features I created a spreadsheet with a check list. This list contains all the features for each screen size so I can check the features and website responsiveness all at once.
+  Click [here](https://github.com/elenasacristan/the-monkees-website/tree/master/Documents/testing-check-list.doc) to see the check-list that I used to test all the features in all the screen sizes.
 
+### Additional testing
+I have used development tools in Google Chrome to check how the website would look in different devices but in addition to that testing I have also asked friends and family to have a look at the website to let me know if everything looks fine on their browsers and devices.
 
-Click [here](https://github.com/elenasacristan/the-monkees-website/tree/master/Documents/testing-check-list.doc) to see the check-list that I used to test all the features in all the screen sizes.
 
 ### Problems and bugs:
-One of the issues that took me longer to fix was the padding than one of the rows (from bootstrap) was adding to the website and was creating an overflow.
+- **padding from Bootstrap elements:** One of the issues that took me longer to fix was the padding than one of the rows (from bootstrap) was adding to the website and was creating an overflow.
 
-I also had issues with the form inside the Modal that appears after clicking “Subscribe”. The problem was that the error message wasn't being displayed if the fields were left empty. Then I found out than when I was working on styling the original form I end up taking the button out of the <form> tags and once I added the button inside the form was working fine.
+- **form error message not being displayed:** I also had issues with the form inside the Modal that appears after clicking “Subscribe”. The problem was that the error message wasn't being displayed if the fields were left empty. Then I found out than when I was working on styling the original form I end up taking the button out of the "form" tags. Once I added the button inside again the form was working fine.
 
-I specially struggle centring elements vertically and horizontally until I watch a tutorial about flex-box and helped me to understand better how to center elements.
+- **Elementes aligment:** I specially struggle centring elements vertically and horizontally until I watch a tutorial about flex-box and helped me to understand better how to center elements.
 
-https://www.youtube.com/watch?v=JJSoEo8JSnc&t=372s
+  https://www.youtube.com/watch?v=JJSoEo8JSnc&t=372s
 
-In theband.html the custom attribute “data-year” was initially called “year“ and it was giving me errors in the validator. I asked in slack and they told me that I should add “data-” before year in order to fix the issue.
+- **Custom attributte:** In theband.html the custom attribute “data-year” was initially called “year“ and it was giving me errors in the validator. I asked in slack and they told me that I should add “data-” before year in order to fix the issue.
 
 ## Deployment
-I have used GitHub to Deploy the website. In order to do that I have followed the steps below:
+I have used GitHub Pages to deploy the website. In order to do that I have followed the steps below:
 
-1. I created a repository in GitHub called: “elenasacristan/the-monkees-website”
+1. I have created a repository in GitHub called: “elenasacristan/the-monkees-website”
+https://github.com/elenasacristan/the-monkeys-website.git
+2. I have initialised git from the terminal in Cloud9:
+  
+    `git init`
 
-2. Then I initialised git from the terminal in Cloud9
-“git init”
+3. I have added the files that I was working on to the Staging area by using: 
 
-3. I added the files as I was working on to the Staging area by using 
-“git add .”
+    `git add .`
 
-4. I run the commit command with the first commit
-“git commit -m “initial commit”
+4. I have run the commit command with the first commit
 
-5. I copied from GitHub the following path and I have run it in the cloud9 terminal in order to indicate where is my remote repository:
+    `git commit -m “initial commit`
 
-    *git remote add origin https://github.com/elenasacristan/the-monkeys-website.git*
+5. I have copied from GitHub the following path and I have run it in the cloud9 terminal in order to indicate where is my remote repository:
 
-    *git push -u origin master*
+    `git remote add origin https://github.com/elenasacristan/the-monkeys-website.git`
 
-6. Then in the GitHub pages settings I selected the master branch, I saved and the website was published at:
-https://elenasacristan.github.io/the-monkees-website/ 
+    `git push -u origin master`
 
-7. After this has been done I have run regular commits after every important update to the code and I have push the changes to GitHub pages.
+6. Then from my GitHub repository I have gone to settings, I have selected the master branch, I have saved and the website was published at:
+
+    https://elenasacristan.github.io/the-monkees-website/ 
+
+7. After this has been done I have run regular commits after every important update to the code and I have pushed the changes to GitHub pages.
 
 8. Also I have used “git clone https://elenasacristan.github.io/the-monkees-website/” in order to download the website to my computer and be able to work offline.
 
-*I didn’t understand very well how to run the code locally but my mentor (Guido García) help me with this and he show me how to run my website locally by installing http-server and making my pc behave as the server.
+*I didn’t understand very well how to run the code locally but my mentor (Guido Cecilio García Bernal) help me with this and he show me how to run my website locally by installing http-server and making my pc behave as the server.
 I learned about this after I finished working on the website but for sure is something that I will use for future projects.* 
 
-See below the link to mu repository:
+### My repository
+
 
 https://github.com/elenasacristan/the-monkees-website/
 
@@ -247,22 +279,28 @@ https://github.com/elenasacristan/the-monkees-website/
 
 
 #### Content
-- The content in “theband.html” section “history of the band” was copied from Spotify (https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck/about).
-- The content in “theband.html” section “members” and the dates for the albums in the section “discography” were copied from Wikipedia (https://en.wikipedia.org/wiki/The_Monkees).
+- The content in “theband.html” section “history of the band” was copied from Spotify 
+  
+  https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck/about
+
+- The content in “theband.html” section “members” and the dates for the albums in the section “discography” were copied from Wikipedia
+
+  https://en.wikipedia.org/wiki/The_Monkees
 
 #### Media
 
-##### Index.html 
+##### index.html 
 - The photos used for the carousel were obtained from google images using the Advance Search and selecting “free to use, share or modify, even commercially”. 
-  https://commons.wikimedia.org/wiki/File:The_Monkees.jpg 
+ 
+   https://commons.wikimedia.org/wiki/File:The_Monkees.jpg 
   https://cs.m.wikipedia.org/wiki/Soubor:The_Monkees_May_1967.jpg
   https://commons.wikimedia.org/wiki/File:The_Monkees_1967.jpg
 
-##### TheBand:
+##### theband.html:
 
-- All the photos on theband page were obtained from the assets that were available for the project.
+- All the photos on theband.html page were obtained from the assets that were provided by codeinstitute for the project.
 
-##### News:
+##### news.html:
 
 - The videos in “The Latest” section were obtained from YouTube.
 
@@ -271,10 +309,11 @@ https://github.com/elenasacristan/the-monkees-website/
 
   https://open.spotify.com/album/3WzJHiv489Wb9So4K7csLy
 https://open.spotify.com/album/618fk3ITH2nXQtT0nTTZ84
-- The vinil disc image was obtained from google images using the Advance Search and selecting “free to use, share or modify, even commercially”.
+- The vinyl image was obtained from google images using the Advance Search and selecting “free to use, share or modify, even commercially”.
 
     https://pixabay.com/en/vinyl-platinum-disk-music-dj-2241789/
-- The photos on top of the the vinyl discs were obtained from the assets that were available for the project.
+    
+- The photos on top of the the vinyl images were obtained from the assets that were available for the project.
 - The mp3 files were also obtained from the assets that were available for the project.
 
 ##### contact.html
@@ -290,6 +329,6 @@ https://www.pexels.com/photo/christmas-corporate-dinner-formal-576431/
 - I received inspiration for the rotating vinyl on the “listen.html” when I was looking for music themes and I saw a vinyl rotating when the play button was pressed (https://codepen.io/joshbader/pen/GqXbVk). 
 Since I still haven't learn about javaScript I decided to do something similar using @keyframes instead.
 - Thanks to the slack community for helping me solving some question while I was working on the website.
-- Thanks to my mentor for his advice on the final touches to improve the website and also thank you for the training on Git and helping me understand better how to run the code locally.
+- Thanks to my mentor (Guido Cecilio García Bernal) for his advice on the final touches to improve the website and also thank you for the training me on Git and helping me understand better how to run the code locally.
  
 
