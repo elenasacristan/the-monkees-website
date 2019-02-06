@@ -3,7 +3,9 @@
 This is a website that will be used mainly by current and prospective fans of the Monkees  in order to keep up to date with the latest news, know more about the band and listen to the Monkees songs.
 It will also be used by the band to sell tickets for future concerts, showcase the new albums and be contacted by event organisers to play in events.
 
-Click [here](https://elenasacristan.github.io/the-monkees-website/) to see the website.
+See below the link to the website:
+
+https://elenasacristan.github.io/the-monkees-website/
 
 ## UX
 
@@ -150,6 +152,10 @@ This page is aimed for event organisers who want to contact the band to play in 
 - **Start rating:** I would like to add a 'Start rating' scale under the audio elements so when the users listen to the songs they can give them a rating.
 
 ## Technologies Used
+
+#### Mockup tool:
+
+- **[Pencil:](https://pencil.evolus.vn/ 'https://pencil.evolus.vn/')** I have used Pencil to create the initial mockups for the website.
 
 #### Languages:
 
