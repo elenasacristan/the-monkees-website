@@ -16,47 +16,31 @@ This website is targeting current and potential fans of the Monkees band. This w
 Below you can see the mockups that I drew using the mockup tool “Pencil”. I used “Pencil” for the desktop mockups and then in paper I created the mockups for smaller screen sizes:
 
 ##### index.html
-
 ![index](/mockups/index.jpg)
 
 
-
 ##### theband.html:"history of the band"
-
 ![theband](/mockups/band1.jpg)
 
 
-
 ##### theband.html:"members" 
-
 ![theband](/mockups/band2.jpg)
 
 
-
 ##### theband.html:"discography"
-
 ![theband](/mockups/thebandp3.png)
 
 
-
 ##### news.html
-
 ![news](/mockups/news.jpg)
- 
- 
 
+ 
 ##### listen.html
-
 ![listen](/mockups/listen.jpg)
- 
- 
 
+ 
 ##### contact.html
-
 ![contact](/mockups/contact.png)
-
-
- 
 
 **Note that the final design has changed from the original design in the mockups. The reason why it has changed is because I was trying different layouts while I was writting the code and sometimes the new designs looked better than the original ones. I also was advised by my mentor to remove the two scrolling bars in the page listen.html and display each section in a different bootstrap raw. Another addition were the quotes in the contact.html page*
 
