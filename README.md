@@ -15,9 +15,11 @@ This website is targeting current and potential fans of the Monkees band. This w
 
 In the links below you can see the mockups that I drew using the mockup tool “Pencil”:
 
+![](/mockups/index1.jpg)
+
 - [index.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/index.png)
-- [the band-part1.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/ttheband1.png)
-- [the band-part2.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/tthebandp2.png)
+- [the band-part1.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/theband1.png)
+- [the band-part2.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/thebandp2.png)
 - [the band-part3.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/thebandp3.png)
 - [news.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/news.png)
 - [listen.html](https://github.com/elenasacristan/the-monkees-website/tree/master/mockups/listen.png)
