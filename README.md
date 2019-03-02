@@ -15,54 +15,47 @@ This website is targeting current and potential fans of the Monkees band. This w
 
 Below you can see the mockups that I drew using the mockup tool “Pencil”. I used “Pencil” for the desktop mockups and then in paper I created the mockups for smaller screen sizes:
 
-##### index.html - lg, md and sm screen sizes
+##### index.html
 
-![index](/mockups/index.png)
-
-##### index.html - xs screen size
-
-![index](/mockups/index1.jpg)
+![index](/mockups/index.jpg)
 
 
-##### theband.html:"history of the band" - lg, md and sm screen sizes
 
-![theband](/mockups/theband1.png)
- 
-##### theband.html:"history of the band" - xs screen size
+##### theband.html:"history of the band"
 
-![theband](/mockups/band1xs.jpg)
- 
-##### theband.html:"members" - lg screen size
+![theband](/mockups/band1.jpg)
 
-![theband](/mockups/thebandp2.png)
- 
-##### theband.html:"members" - md, sm and xs screen sizes
 
-![theband](/mockups/band2xs.jpg)
 
-##### theband.html:"discography" - All screen sizes
+##### theband.html:"members" 
+
+![theband](/mockups/band2.jpg)
+
+
+
+##### theband.html:"discography"
 
 ![theband](/mockups/thebandp3.png)
 
-##### news.html:lg and md screen sizes
 
-![news](/mockups/news.png)
- 
-##### news.html:sm and xs screen sizes
 
-![news](/mockups/news-smxs.jpg)
- 
-##### listen.html:lg screen size
+##### news.html
 
-![listen](/mockups/listen.png)
+![news](/mockups/news.jpg)
  
-##### listen.html:md, sm and xs screen sizes
+ 
 
-![listen](/mockups/listen-mdsmxs.jpg)
+##### listen.html
+
+![listen](/mockups/listen.jpg)
  
-##### contact.html: - All screen sizes
+ 
+
+##### contact.html
 
 ![contact](/mockups/contact.png)
+
+
  
 
 **Note that the final design has changed from the original design in the mockups. The reason why it has changed is because I was trying different layouts while I was writting the code and sometimes the new designs looked better than the original ones. I also was advised by my mentor to remove the two scrolling bars in the page listen.html and display each section in a different bootstrap raw. Another addition were the quotes in the contact.html page*
